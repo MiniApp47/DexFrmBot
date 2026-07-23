@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
           promoEligible: true,
           type: "Hash",
           image: "ProductJM.png",
-          video: "VideoJM.mov",
+          video: "VideoJM.mp4",
           description: "Texture légère et mousseuse 🌫️, couleur jaune éclatante ☀️, qualité premium 💎.\n Un produit authentique, rare et soigneusement sélectionné 🌿.",
           tarifs: [
             { weight: "10g", price: 50.0 },
