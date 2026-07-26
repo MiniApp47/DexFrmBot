@@ -76,6 +76,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
       products: [
         {
+          id: "Hash Mousseux 🇲🇦",
+          flag: "🇲🇦",
+          name: "Hash Mousseux 🇲🇦",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "Hash",
+          image: "ProductHM.png",
+          video: "VideoHM.mp4",
+          description: "Hash à la texture légère et aérée, facile à travailler, reconnu pour son aspect mousseux caractéristique. Arômes subtils et naturels, avec une signature authentique du terroir marocain 🇲🇦. \n Qualité soignée, idéal pour les amateurs recherchant douceur et finesse.",
+          tarifs: [
+            { weight: "10g", price: 50.0 },
+            { weight: "50g", price: 200.0 },
+            { weight: "100g", price: 350.0 },
+          ],
+        },
+        {
           id: "🟡 Crytical",
           flag: "🇲🇦",
           name: "🟡 Crytical",
@@ -117,6 +133,22 @@ document.addEventListener("DOMContentLoaded", function () {
       image: "CategStatic.png",
 
       products: [
+      {
+          id: "Black Cherry 🇲🇦 🍒",
+          flag: "🇲🇦",
+          name: "Black Cherry 🇲🇦 🍒",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "⚡️ Static",
+          image: "ProductBC.png",
+          video: "VideoBC.mp4",
+          description: "Un produit d’exception issu du savoir-faire marocain, à la texture fine et soyeuse typique du static. Profil aromatique profond dominé par la cerise noire, avec des notes sucrées et délicatement boisées.\n Une qualité premium, pure et raffinée, offrant une signature élégante et authentique, destinée aux connaisseurs exigeants. ✨",
+          tarifs: [
+            { weight: "5g", price: 70.0 },
+            { weight: "50g", price: 400.0 },
+            { weight: "100g", price: 700.0 },
+          ],
+        },
       {
           id: "ALL BLUE 🫐",
           flag: "🇲🇦",
@@ -187,6 +219,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
       products: [
          {
+          id: "Black Cherry Punch 🇲🇦",
+          flag: "🇲🇦",
+          name: "Black Cherry Punch 🇲🇦",
+          farm: "Mozart farm 🎻",
+          promoEligible: true,
+          type: "🧊 Frozen",
+          image: "ProductBCP.png",
+          video: "VideoBCP.mp4",
+          description: "Variété premium aux arômes intenses de cerise noire, avec des notes sucrées et légèrement acidulées. Têtes compactes à l’aspect givré, qualité soignée.\n\n Origine Maroc 🇲🇦 — profil riche, saveurs fruitées et fraîches.",
+          tarifs: [
+            { weight: "5g", price: 60.0 },
+            { weight: "10g", price: 100.0 },
+            { weight: "50g", price: 380.0 },
+            { weight: "100g", price: 650.0 },
+          ],
+        },
+         {
           id: "PannaCotta 🍮",
           flag: "🇲🇦",
           name: "PannaCotta 🍮",
@@ -230,6 +279,22 @@ document.addEventListener("DOMContentLoaded", function () {
       image: "CategCaliU.png",
 
       products: [
+         {
+          id: "Lemon Cherry Gelato 🍋🍒",
+          flag: "🇺🇸",
+          name: "Lemon Cherry Gelato 🍋🍒",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "🇺🇸 Cali US",
+          image: "ProductLCG.png",
+          video: "VideoLCG.mov",
+          description: "Une génétique d’exception au profil aromatique sophistiqué, où la fraîcheur du citron se mêle à la rondeur sucrée de la cerise. Têtes parfaitement formées, denses et résineuses, au visuel irréprochable.\n Une signature haut de gamme, pensée pour les amateurs exigeants en quête d’une expérience raffinée et distinctive. ✨",
+          tarifs: [
+            { weight: "5g", price: 50.0 },
+            { weight: "50g", price: 400.0 },
+            { weight: "100g", price: 700.0 },
+          ],
+        },
          {
           id: "AK-47 Runtz",
           flag: "🇺🇸",
