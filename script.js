@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "10g", price: 120.0 },
           ],
         },
-      {
+      /* {
           id: "Acapulco 🏝️",
           flag: "🇲🇦",
           name: "Acapulco 🏝️",
@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "50g", price: 230.0 },
             { weight: "100g", price: 400.0 },
           ],
-        },
+        }, */
       ],
     },
     {
