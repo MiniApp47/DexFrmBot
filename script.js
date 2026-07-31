@@ -351,6 +351,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
       products: [
          {
+          id: "GORILLA RUNTZ 🍀",
+          flag: "🇺🇸",
+          name: "GORILLA RUNTZ 🍀",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "🇺🇸 Cali US",
+          image: "ProductGR.png",
+          video: "VideoGR.mp4",
+          description: "Luxe extrême, puissance absolue.\n 💎 Une pièce rare au goût sucré et à l’intensité hors norme… l’élite seulement.",
+          tarifs: [
+            { weight: "5g", price: 50.0 },
+            { weight: "50g", price: 400.0 },
+            { weight: "100g", price: 700.0 },
+          ],
+        },
+         {
           id: "Chantilly Runtz 🍀",
           flag: "🇺🇸",
           name: "Chantilly Runtz 🍀",
