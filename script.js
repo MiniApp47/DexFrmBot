@@ -159,6 +159,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
       products: [
       {
+          id: "Coubaka Hash 🇲🇦",
+          flag: "🇲🇦",
+          name: "Coubaka Hash 🇲🇦",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "⚡️ Static",
+          image: "ProductCH.png",
+          video: "VideoCH.mp4",
+          description: "Une qualité ultra premium, travaillée avec précision pour offrir une richesse aromatique exceptionnelle.\n Un produit d’exception, puissant, savoureux et réservé aux vrais connaisseurs. 🍀",
+          tarifs: [
+            { weight: "5g", price: 80.0 },
+            { weight: "10g", price: 140.0 },
+          ],
+        },
+      {
           id: "Static Premium 🇲🇦",
           flag: "🇲🇦",
           name: "Static Premium 🇲🇦",
@@ -350,6 +365,22 @@ document.addEventListener("DOMContentLoaded", function () {
       image: "CategCaliU.png",
 
       products: [
+         {
+          id: "Runtz Cali 🇺🇸",
+          flag: "🇺🇸",
+          name: "Runtz Cali 🇺🇸",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "🇺🇸 Cali US",
+          image: "ProductRC.png",
+          video: "VideoRC.mp4",
+          description: "Mexicana Runtz Cali 🇺🇸 produit rare, sélection premium venue de Californie.\n Une variété d’exception, reconnue pour son profil aromatique intense et sa qualité haut de gamme.\n Des notes sucrées et fruitées parfaitement équilibrées, offrant une expérience riche et unique.\n Un produit ultra premium réservé aux véritables amateurs de génétique californienne d’élite. 🍀",
+          tarifs: [
+            { weight: "5g", price: 50.0 },
+            { weight: "50g", price: 400.0 },
+            { weight: "100g", price: 700.0 },
+          ],
+        },
          {
           id: "GORILLA RUNTZ 🍀",
           flag: "🇺🇸",
