@@ -111,9 +111,9 @@ document.addEventListener("DOMContentLoaded", function () {
           video: "VideoHM.mp4",
           description: "Résine provenance Maroc. Texture souple et facile à effriter. Fumée agréable, goût simple et équilibré. Idéal pour une détente légère au quotidien. 🧽🇲🇦",
           tarifs: [
-            { weight: "10g", price: 50.0 },
-            { weight: "50g", price: 200.0 },
-            { weight: "100g", price: 350.0 },
+            { weight: "5g", price: 50.0 },
+            { weight: "50g", price: 160.0 },
+            { weight: "100g", price: 300.0 },
           ],
         },
         {
@@ -127,9 +127,9 @@ document.addEventListener("DOMContentLoaded", function () {
           video: "VideoCry.mp4",
           description: "Résine jaune mousseuse, provenance Maroc. Texture souple et facile à effriter. Fumée douce, goût agréable aux notes sucrées et terreuses. Idéal pour une détente naturelle sans effet psychoactif.🧽🇲🇦",
           tarifs: [
-            { weight: "10g", price: 50.0 },
-            { weight: "50g", price: 250.0 },
-            { weight: "100g", price: 450.0 },
+            { weight: "5g", price: 50.0 },
+            { weight: "50g", price: 160.0 },
+            { weight: "100g", price: 300.0 },
           ],
         },
         {
@@ -143,9 +143,9 @@ document.addEventListener("DOMContentLoaded", function () {
           video: "VideoJM.mp4",
           description: "Texture légère et mousseuse 🌫️, couleur jaune éclatante ☀️, qualité premium 💎.\n Un produit authentique, rare et soigneusement sélectionné 🌿.",
           tarifs: [
-            { weight: "10g", price: 50.0 },
-            { weight: "50g", price: 200.0 },
-            { weight: "100g", price: 350.0 },
+            { weight: "5g", price: 50.0 },
+            { weight: "50g", price: 160.0 },
+            { weight: "100g", price: 300.0 },
           ],
         },
       ],
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "10g", price: 140.0 },
           ],
         },
-      {
+      /* {
           id: "Static Premium 🇲🇦",
           flag: "🇲🇦",
           name: "Static Premium 🇲🇦",
@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "50g", price: 450.0 },
             { weight: "100g", price: 750.0 },
           ],
-        },
+        }, */
       {
           id: "FFxXD Static Premium 🇲🇦",
           flag: "🇲🇦",
@@ -201,8 +201,9 @@ document.addEventListener("DOMContentLoaded", function () {
           description: "FFxXD Static Premium 🇲🇦 – Ultra filtré, qualité brute et puissance extrême. Texture parfaite, résine pure, impact massif. Clairement réservé aux amateurs de très lourd.",
           tarifs: [
             { weight: "5g", price: 70.0 },
+            { weight: "10g", price: 130.0 },
             { weight: "50g", price: 450.0 },
-            { weight: "100g", price: 750.0 },
+            { weight: "100g", price: 800.0 },
           ],
         },
       {
@@ -217,8 +218,9 @@ document.addEventListener("DOMContentLoaded", function () {
           description: "Un produit d’exception issu du savoir-faire marocain, à la texture fine et soyeuse typique du static. Profil aromatique profond dominé par la cerise noire, avec des notes sucrées et délicatement boisées.\n Une qualité premium, pure et raffinée, offrant une signature élégante et authentique, destinée aux connaisseurs exigeants. ✨",
           tarifs: [
             { weight: "5g", price: 70.0 },
-            { weight: "50g", price: 400.0 },
-            { weight: "100g", price: 700.0 },
+            { weight: "10g", price: 130.0 },
+            { weight: "50g", price: 450.0 },
+            { weight: "100g", price: 800.0 },
           ],
         },
       {
@@ -233,7 +235,9 @@ document.addEventListener("DOMContentLoaded", function () {
           description: "– Origine Maroc 🇲🇦 \n Produit premium 💎, reconnu pour son goût intense et sa richesse aromatique 😋.\n Issu d’une sélection rigoureuse, il offre une expérience authentique, puissante et raffinée",
           tarifs: [
             { weight: "5g", price: 70.0 },
-            { weight: "10g", price: 120.0 },
+            { weight: "10g", price: 130.0 },
+            { weight: "50g", price: 450.0 },
+            { weight: "100g", price: 800.0 },
           ],
         },
       /* {
@@ -289,7 +293,7 @@ document.addEventListener("DOMContentLoaded", function () {
       image: "CategFrozen.png",
 
       products: [
-         {
+         /* {
           id: "Black Cherry 🇲🇦",
           flag: "🇲🇦",
           name: "Black Cherry 🇲🇦",
@@ -304,7 +308,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "50g", price: 450.0 },
             { weight: "100g", price: 800.0 },
           ],
-        },
+        }, */
          {
           id: "Black Cherry Punch 🇲🇦",
           flag: "🇲🇦",
@@ -318,7 +322,7 @@ document.addEventListener("DOMContentLoaded", function () {
           tarifs: [
             { weight: "5g", price: 60.0 },
             { weight: "10g", price: 100.0 },
-            { weight: "50g", price: 380.0 },
+            { weight: "50g", price: 350.0 },
             { weight: "100g", price: 650.0 },
           ],
         },
@@ -335,7 +339,7 @@ document.addEventListener("DOMContentLoaded", function () {
           tarifs: [
             { weight: "5g", price: 60.0 },
             { weight: "10g", price: 100.0 },
-            { weight: "50g", price: 380.0 },
+            { weight: "50g", price: 350.0 },
             { weight: "100g", price: 650.0 },
           ],
         },
@@ -350,9 +354,10 @@ document.addEventListener("DOMContentLoaded", function () {
           video: "VideoPF.mov",
           description: "G.M.O Frozen Shift 🇲🇦 – Extraction soignée, texture froide et raffinée. Profil aromatique puissant et complexe, fumée douce et propre. Une sélection haut de gamme au caractère unique.",
           tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 400.0 },
-            { weight: "100g", price: 700.0 },
+            { weight: "5g", price: 60.0 },
+            { weight: "10g", price: 100.0 },
+            { weight: "50g", price: 350.0 },
+            { weight: "100g", price: 650.0 },
           ],
         },
       ],
@@ -377,8 +382,8 @@ document.addEventListener("DOMContentLoaded", function () {
           description: "Mexicana Runtz Cali 🇺🇸 produit rare, sélection premium venue de Californie.\n Une variété d’exception, reconnue pour son profil aromatique intense et sa qualité haut de gamme.\n Des notes sucrées et fruitées parfaitement équilibrées, offrant une expérience riche et unique.\n Un produit ultra premium réservé aux véritables amateurs de génétique californienne d’élite. 🍀",
           tarifs: [
             { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 400.0 },
-            { weight: "100g", price: 700.0 },
+            { weight: "50g", price: 350.0 },
+            { weight: "100g", price: 650.0 },
           ],
         },
          {
@@ -393,8 +398,8 @@ document.addEventListener("DOMContentLoaded", function () {
           description: "Luxe extrême, puissance absolue.\n 💎 Une pièce rare au goût sucré et à l’intensité hors norme… l’élite seulement.",
           tarifs: [
             { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 400.0 },
-            { weight: "100g", price: 700.0 },
+            { weight: "50g", price: 350.0 },
+            { weight: "100g", price: 650.0 },
           ],
         },
          {
@@ -409,8 +414,8 @@ document.addEventListener("DOMContentLoaded", function () {
           description: "Niveau élite, signature californienne. Crémeuse, blindée de résine, impact direct. Clairement pas pour tout le monde.",
           tarifs: [
             { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 400.0 },
-            { weight: "100g", price: 700.0 },
+            { weight: "50g", price: 350.0 },
+            { weight: "100g", price: 650.0 },
           ],
         },
          {
@@ -425,8 +430,8 @@ document.addEventListener("DOMContentLoaded", function () {
           description: "Cali US 🍀 – Explosion sucrée, résine brillante, puissance maîtrisée. Un pur bijou californien qui ne laisse aucune chance à l’ordinaire",
           tarifs: [
             { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 400.0 },
-            { weight: "100g", price: 700.0 },
+            { weight: "50g", price: 350.0 },
+            { weight: "100g", price: 650.0 },
           ],
         },
          {
@@ -441,8 +446,8 @@ document.addEventListener("DOMContentLoaded", function () {
           description: "Cali US 🍀 – Dense, résineuse, ultra gourmande. Une signature premium qui frappe dès la première bouffée.",
           tarifs: [
             { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 400.0 },
-            { weight: "100g", price: 700.0 },
+            { weight: "50g", price: 350.0 },
+            { weight: "100g", price: 650.0 },
           ],
         },
          {
@@ -457,8 +462,8 @@ document.addEventListener("DOMContentLoaded", function () {
           description: "Cali US 🍀 – Fleur d’exception importée, structure compacte et résineuse. Profil aromatique riche et sophistiqué, fumée douce et enveloppante. Une génétique haut de gamme pour une expérience raffinée.",
           tarifs: [
             { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 400.0 },
-            { weight: "100g", price: 700.0 },
+            { weight: "50g", price: 350.0 },
+            { weight: "100g", price: 650.0 },
           ],
         },
          {
@@ -473,8 +478,8 @@ document.addEventListener("DOMContentLoaded", function () {
           description: "Une génétique d’exception au profil aromatique sophistiqué, où la fraîcheur du citron se mêle à la rondeur sucrée de la cerise. Têtes parfaitement formées, denses et résineuses, au visuel irréprochable.\n Une signature haut de gamme, pensée pour les amateurs exigeants en quête d’une expérience raffinée et distinctive. ✨",
           tarifs: [
             { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 400.0 },
-            { weight: "100g", price: 700.0 },
+            { weight: "50g", price: 350.0 },
+            { weight: "100g", price: 650.0 },
           ],
         },
          {
@@ -489,8 +494,8 @@ document.addEventListener("DOMContentLoaded", function () {
           description: "– Cali US 💎\n Une Cali très compacte, au visuel soigné et à la structure dense 🌿\n\n ⚡️ Profil puissant et concentré, réservé aux amateurs de sensations marquées\n\n 😋 En bouche, une expérience riche, prononcée et mémorable\n\n 💎 Un produit qui sort clairement du commun, taillé pour le haut de gamme",
           tarifs: [
             { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 400.0 },
-            { weight: "100g", price: 700.0 },
+            { weight: "50g", price: 350.0 },
+            { weight: "100g", price: 650.0 },
           ],
         },
          {
@@ -505,8 +510,8 @@ document.addEventListener("DOMContentLoaded", function () {
           description: "– Cali US 💎\n Une variété iconique au profil unique, marquée par des notes sucrées et gourmandes 🌿\n\n ✨ Texture soignée, goût prononcé et longueur en bouche remarquable\n 🔥 Une pépite rare, réservée aux amateurs de produits vraiment premium",
           tarifs: [
             { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 400.0 },
-            { weight: "100g", price: 700.0 },
+            { weight: "50g", price: 350.0 },
+            { weight: "100g", price: 650.0 },
           ],
         },
          {
@@ -521,9 +526,8 @@ document.addEventListener("DOMContentLoaded", function () {
           description: "Plongez dans une expérience ultra gourmande avec la Tropical Candy 🍍, un produit intensément fruité et exceptionnel en bouche 😋.\n Ses saveurs exotiques apportent une fraîcheur sucrée irrésistible, avec un équilibre parfait entre douceur et caractère 🌿.",
           tarifs: [
             { weight: "5g", price: 50.0 },
-            { weight: "10g", price: 100.0 },
-            { weight: "50g", price: 400.0 },
-            { weight: "100g", price: 700.0 },
+            { weight: "50g", price: 350.0 },
+            { weight: "100g", price: 650.0 },
           ],
         },
          {
@@ -538,9 +542,8 @@ document.addEventListener("DOMContentLoaded", function () {
           description: "Découvrez la Cali Chantilly, un produit haut de gamme 💎 reconnu pour son goût intense et sa qualité incomparable 😋.\n Sa texture légère et crémeuse offre une expérience unique, alliant douceur et puissance 🌿.",
           tarifs: [
             { weight: "5g", price: 50.0 },
-            { weight: "10g", price: 100.0 },
-            { weight: "50g", price: 400.0 },
-            { weight: "100g", price: 700.0 },
+            { weight: "50g", price: 350.0 },
+            { weight: "100g", price: 650.0 },
           ],
         },
       ],
