@@ -279,8 +279,8 @@ document.addEventListener("DOMContentLoaded", function () {
           description:"Hash Premium 3X Filtré 🇲🇦 – Texture fine et maîtrisée, fumée douce, arômes propres et intenses. Une sélection soignée pour une qualité qui fait la différence.",
           tarifs: [
             { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 300.0 },
-            { weight: "100g", price: 550.0 },
+            { weight: "50g", price: 230.0 },
+            { weight: "100g", price: 450.0 },
           ],
         },
       ],
@@ -370,6 +370,22 @@ document.addEventListener("DOMContentLoaded", function () {
       image: "CategCaliU.png",
 
       products: [
+         {
+          id: "🍁 MAPLE LEAF 🍁",
+          flag: "🇺🇸",
+          name: "🍁 MAPLE LEAF 🍁",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "🇺🇸 Cali US",
+          image: "ProductML.jpg",
+          video: "",
+          description: "🇺🇸 Une variété super raffinée, au profil gustatif exceptionnel.\n 💥 Explosion de saveurs dès la première dégustation, avec des notes riches et intenses.\n ✨ MAPLE LEAF — finesse, caractère & plaisir.",
+          tarifs: [
+            { weight: "5g", price: 50.0 },
+            { weight: "50g", price: 350.0 },
+            { weight: "100g", price: 600.0 },
+          ],
+        },
          {
           id: "Runtz Cali 🇺🇸",
           flag: "🇺🇸",
