@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
       image: "CategJaune.png",
 
       products: [
-        {
+      /*   {
           id: "Hash Mousseux 🇲🇦",
           flag: "🇲🇦",
           name: "Hash Mousseux 🇲🇦",
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "50g", price: 160.0 },
             { weight: "100g", price: 300.0 },
           ],
-        },
+        }, */
         {
           id: "🟡 Crytical",
           flag: "🇲🇦",
@@ -371,6 +371,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
       products: [
          {
+          id: "🐾 ANIMAL FACE RUNTZ 🐾",
+          flag: "🇺🇸",
+          name: "🐾 ANIMAL FACE RUNTZ 🐾",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "🇺🇸 Cali US",
+          image: "ProductAF.png",
+          video: "VideoAF.mp4",
+          description: `🔥 NOUVELLE CALI 🇺🇸
+🇺🇸 Origine US — une variété ultra raffinée
+
+💎 Profil premium
+🍭 Explosion de saveurs
+🌿 Arômes riches et intenses
+✨ Une nouveauté à découvrir chez DEXTER FARM
+
+🔥 DISPONIBLE DÈS MAINTENANT`,
+          tarifs: [
+            { weight: "5g", price: 50.0 },
+            { weight: "50g", price: 350.0 },
+            { weight: "100g", price: 650.0 },
+          ],
+        },
+         {
           id: "🍁 MAPLE LEAF 🍁",
           flag: "🇺🇸",
           name: "🍁 MAPLE LEAF 🍁",
@@ -386,7 +410,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "100g", price: 600.0 },
           ],
         },
-         {
+        /*  {
           id: "Runtz Cali 🇺🇸",
           flag: "🇺🇸",
           name: "Runtz Cali 🇺🇸",
@@ -401,7 +425,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "50g", price: 350.0 },
             { weight: "100g", price: 650.0 },
           ],
-        },
+        }, */
          {
           id: "GORILLA RUNTZ 🍀",
           flag: "🇺🇸",
@@ -434,7 +458,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "100g", price: 650.0 },
           ],
         },
-         {
+        /*  {
           id: "🍀 Candy Gelato",
           flag: "🇺🇸",
           name: "🍀 Candy Gelato",
@@ -449,8 +473,8 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "50g", price: 350.0 },
             { weight: "100g", price: 650.0 },
           ],
-        },
-         {
+        }, */
+        /*  {
           id: "🍀 Rainbow Cookie",
           flag: "🇺🇸",
           name: "🍀 Rainbow Cookie",
@@ -465,8 +489,8 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "50g", price: 350.0 },
             { weight: "100g", price: 650.0 },
           ],
-        },
-         {
+        }, */
+         /* {
           id: "🍀 MAC RS11",
           flag: "🇺🇸",
           name: "🍀 MAC RS11",
@@ -481,7 +505,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "50g", price: 350.0 },
             { weight: "100g", price: 650.0 },
           ],
-        },
+        }, */
          {
           id: "Lemon Cherry Gelato 🍋🍒",
           flag: "🇺🇸",
@@ -498,7 +522,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "100g", price: 650.0 },
           ],
         },
-         {
+         /* {
           id: "AK-47 Runtz",
           flag: "🇺🇸",
           name: " AK-47 Runtz 🔫",
@@ -513,8 +537,8 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "50g", price: 350.0 },
             { weight: "100g", price: 650.0 },
           ],
-        },
-         {
+        }, */
+        /*  {
           id: "🇺🇸 White Runtz",
           flag: "🇺🇸",
           name: " White Runtz 🍥",
@@ -529,8 +553,8 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "50g", price: 350.0 },
             { weight: "100g", price: 650.0 },
           ],
-        },
-         {
+        }, */
+         /* {
           id: "🌴 Tropical Candy",
           flag: "🇺🇸",
           name: "🌴 Tropical Candy",
@@ -561,7 +585,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "50g", price: 350.0 },
             { weight: "100g", price: 650.0 },
           ],
-        },
+        }, */
       ],
     },
     {
