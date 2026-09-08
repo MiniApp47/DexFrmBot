@@ -371,6 +371,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
       products: [
          {
+          id: "🇺🇸 OG RUNTZ ",
+          flag: "🇺🇸",
+          name: "🇺🇸 OG RUNTZ ",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "🇺🇸 Cali US",
+          image: "ProductOR.png",
+          video: "VideoOR.mov",
+          description: `DEXTER FARM présente une sélection rare à l’identité premium, reconnue pour son profil qualitatif et son caractère exclusif. 💎
+
+✨ Provenance : États-Unis
+🔥 Sélection haut de gamme
+🍬 Profil aromatique riche et travaillé
+⭐ Produit rare & recherché`,
+          tarifs: [
+            { weight: "5g", price: 50.0 },
+            { weight: "50g", price: 350.0 },
+            { weight: "100g", price: 650.0 },
+          ],
+        },
+         {
           id: "🐾 ANIMAL FACE RUNTZ 🐾",
           flag: "🇺🇸",
           name: "🐾 ANIMAL FACE RUNTZ 🐾",
