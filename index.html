@@ -58,6 +58,119 @@
             box-shadow: 0 0 10px rgba(52, 199, 89, 0.5);
         }
 
+
+        /* ===== POPUP PROMO DEXTER FARM ===== */
+
+.promo-popup-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    background: rgba(0, 0, 0, 0.88);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.promo-popup-overlay.show {
+    display: flex;
+    animation: promoFadeIn 0.35s ease;
+}
+
+.promo-popup-card {
+    width: 100%;
+    max-width: 380px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(166, 232, 13, 0.17),
+            rgba(5, 5, 5, 0.98) 40%,
+            rgba(104, 65, 13, 0.35)
+        );
+
+    border: 2px solid #a6e80d;
+    border-radius: 24px;
+
+    padding: 26px 20px;
+
+    text-align: center;
+    color: white;
+
+    box-shadow:
+        0 0 15px rgba(166, 232, 13, 0.55),
+        0 0 40px rgba(166, 232, 13, 0.20);
+}
+
+.promo-popup-title {
+    color: #a6e80d;
+    font-size: 21px;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+.promo-popup-type {
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+.promo-popup-offer {
+    font-size: 17px;
+    line-height: 1.5;
+    background: rgba(255,255,255,0.07);
+    border-radius: 14px;
+    padding: 13px 10px;
+}
+
+.promo-popup-footer {
+    color: #d9d9d9;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 23px 5px 18px;
+}
+
+#promo-popup-close {
+    width: 100%;
+    border: none;
+    border-radius: 14px;
+
+    padding: 15px;
+
+    background: #a6e80d;
+    color: #050505;
+
+    font-size: 16px;
+    font-weight: 900;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 15px rgba(166, 232, 13, 0.4);
+}
+
+#promo-popup-close:active {
+    transform: scale(0.97);
+}
+
+@keyframes promoFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
         /* --- Structure générale des pages --- */
         .page {
             display: none;
@@ -1386,6 +1499,43 @@
             <p style="margin: inherit;"> AVIS </p>
         </button> -->
     </div>
+
+    <!-- ===== POPUP PROMO DEXTER FARM ===== -->
+<div id="promo-popup" class="promo-popup-overlay">
+
+    <div class="promo-popup-card">
+
+        <div class="promo-popup-title">
+            🔥 DEXTER FARM — PROMO DU MOMENT 🔥
+        </div>
+
+        <div class="promo-popup-type">
+            🌿 DOUCE
+        </div>
+
+        <div class="promo-popup-offer">
+            ➡️ <strong>150€ achetés = 50€ OFFERTS</strong>
+        </div>
+
+        <div class="promo-popup-type">
+            💎 DUR
+        </div>
+
+        <div class="promo-popup-offer">
+            ➡️ <strong>2 achetés = 1 OFFERT</strong>
+        </div>
+
+        <div class="promo-popup-footer">
+            📲 Profitez de l’offre pendant sa disponibilité.
+        </div>
+
+        <button id="promo-popup-close">
+            J’AI COMPRIS 🔥
+        </button>
+
+    </div>
+
+</div>
 
     <div id="notification-toast"></div>
     <script src="script.js"></script>

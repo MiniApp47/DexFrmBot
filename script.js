@@ -9,6 +9,26 @@ document.addEventListener("DOMContentLoaded", function () {
   const progressBar = document.getElementById("myBar");
   const loader = document.getElementById("page-loader");
 
+  // ===== POPUP PROMO =====
+const promoPopup = document.getElementById("promo-popup");
+const promoPopupClose = document.getElementById("promo-popup-close");
+
+function showPromoPopup() {
+    if (promoPopup) {
+        promoPopup.classList.add("show");
+    }
+}
+
+function closePromoPopup() {
+    if (promoPopup) {
+        promoPopup.classList.remove("show");
+    }
+}
+
+if (promoPopupClose) {
+    promoPopupClose.addEventListener("click", closePromoPopup);
+}
+
   // 1. On lance l'animation de la barre après un tout petit délai
   setTimeout(() => {
     if (progressBar) {
@@ -23,11 +43,18 @@ document.addEventListener("DOMContentLoaded", function () {
       loader.style.transition = "opacity 0.5s ease";
 
       setTimeout(() => {
-        loader.style.display = "none";
-        loader.classList.remove("active");
-        // Affiche la page Home par défaut
-        document.getElementById("page-home").classList.add("active");
-      }, 500); // Attend la fin du fondu
+    loader.style.display = "none";
+    loader.classList.remove("active");
+
+    // Affiche la page Home
+    document.getElementById("page-home").classList.add("active");
+
+    // 🔥 Affiche la promo juste après le chargement
+    setTimeout(() => {
+        showPromoPopup();
+    }, 250);
+
+}, 500);
     }
   }, 2600); // 2600ms = 2.5s d'animation + 0.1s de délai
 
@@ -159,6 +186,53 @@ document.addEventListener("DOMContentLoaded", function () {
 
       products: [
       {
+          id: "PEACH OZZZ 🇺🇸",
+          flag: "🇲🇦",
+          name: "PEACH OZZZ 🇺🇸",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "⚡️ Static",
+          image: "ProductPO.png",
+          video: "VideoPO.mp4",
+          description: `Une référence rare au profil intense et fruité, avec des notes de pêche et une signature aromatique très marquée. ✨
+
+💎 Produit recherché & haut de gamme
+🔥 Profil puissant et expressif
+🍑 Univers fruité / gourmand
+🇺🇸 Origine annoncée : USA
+
+DEXTER FARM — La sélection premium.`,
+          tarifs: [
+            { weight: "5g", price: 80.0 },
+            { weight: "10g", price: 150.0 },
+            { weight: "20g", price: 280.0 },
+          ],
+        },
+      {
+          id: "TANGERINE 🍊",
+          flag: "🇲🇦",
+          name: "TANGERINE 🍊",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "⚡️ Static",
+          image: "ProductT.png",
+          video: "VideoT.mp4",
+          description: `🍊 PLASMA STATIC — TANGERINE 🇺🇸🇲🇦
+
+Un hash au profil intense, fruité et très aromatique, marqué par des notes de tangerine et une signature riche en terpènes. ✨
+
+💎 Sélection rare
+🍊 Profil agrumes & gourmand
+🔥 Texture et caractère prononcés
+
+DEXTER FARM — Sélection premium.`,
+          tarifs: [
+            { weight: "5g", price: 80.0 },
+            { weight: "10g", price: 150.0 },
+            { weight: "20g", price: 280.0 },
+          ],
+        },
+      {
           id: "Coubaka Hash 🇲🇦",
           flag: "🇲🇦",
           name: "Coubaka Hash 🇲🇦",
@@ -206,7 +280,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "100g", price: 800.0 },
           ],
         },
-      {
+     /*  {
           id: "Black Cherry 🇲🇦 🍒",
           flag: "🇲🇦",
           name: "Black Cherry 🇲🇦 🍒",
@@ -239,7 +313,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "50g", price: 450.0 },
             { weight: "100g", price: 800.0 },
           ],
-        },
+        }, */
       /* {
           id: "Acapulco 🏝️",
           flag: "🇲🇦",
@@ -326,7 +400,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "100g", price: 650.0 },
           ],
         },
-         {
+        /*  {
           id: "PannaCotta 🍮",
           flag: "🇲🇦",
           name: "PannaCotta 🍮",
@@ -342,7 +416,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "50g", price: 350.0 },
             { weight: "100g", price: 650.0 },
           ],
-        },
+        }, */
          {
           id: "G.M.O 🧬",
           flag: "🇲🇦",
@@ -371,6 +445,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
       products: [
          {
+          id: "SUPER RUNTZ 🇺🇸",
+          flag: "🇺🇸",
+          name: "SUPER RUNTZ 🇺🇸 ",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "🇺🇸 Cali US",
+          image: "ProductSR.jpg",
+          video: "",
+          description: `🆕 NOUVEAUTÉ — SUPER RUNTZ 🇺🇸
+
+Une variété recherchée au profil fruité, sucré et gourmand, issue de la famille Runtz. 🍬🍋
+
+✨ Profil premium
+🌿 Arômes intenses & terpènes expressifs
+🇺🇸 Origine annoncée : USA
+💎 Une référence pour les amateurs de profils haut de gamme
+
+DEXTER FARM — Sélection & qualité.`,
+          tarifs: [
+            { weight: "5g", price: 50.0 },
+            { weight: "50g", price: 350.0 },
+            { weight: "100g", price: 650.0 },
+          ],
+        },
+        /*  {
           id: "🇺🇸 OG RUNTZ ",
           flag: "🇺🇸",
           name: "🇺🇸 OG RUNTZ ",
@@ -414,7 +513,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "50g", price: 350.0 },
             { weight: "100g", price: 650.0 },
           ],
-        },
+        }, */
          {
           id: "🍁 MAPLE LEAF 🍁",
           flag: "🇺🇸",
@@ -447,7 +546,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "100g", price: 650.0 },
           ],
         }, */
-         {
+        /*  {
           id: "GORILLA RUNTZ 🍀",
           flag: "🇺🇸",
           name: "GORILLA RUNTZ 🍀",
@@ -462,7 +561,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "50g", price: 350.0 },
             { weight: "100g", price: 650.0 },
           ],
-        },
+        }, */
          {
           id: "Chantilly Runtz 🍀",
           flag: "🇺🇸",
@@ -527,7 +626,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "100g", price: 650.0 },
           ],
         }, */
-         {
+         /* {
           id: "Lemon Cherry Gelato 🍋🍒",
           flag: "🇺🇸",
           name: "Lemon Cherry Gelato 🍋🍒",
@@ -542,7 +641,7 @@ document.addEventListener("DOMContentLoaded", function () {
             { weight: "50g", price: 350.0 },
             { weight: "100g", price: 650.0 },
           ],
-        },
+        }, */
          /* {
           id: "AK-47 Runtz",
           flag: "🇺🇸",
