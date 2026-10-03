@@ -102,7 +102,7 @@ if (promoPopupClose) {
       image: "CategPiat.png",
 
       products: [
-          {
+        /*   {
           id: "Rainbow Shebat",
           flag: "🇲🇦",
           name: "Rainbow Shebat & Cap Junky 🍦",
@@ -116,7 +116,7 @@ if (promoPopupClose) {
             { weight: "2g", price: 70.0 },
             { weight: "5g", price: 160.0 },
           ],
-        },
+        }, */
       ],
     },
     {
@@ -127,52 +127,18 @@ if (promoPopupClose) {
       image: "CategJaune.png",
 
       products: [
-      /*   {
-          id: "Hash Mousseux 🇲🇦",
+        {
+          id: "🇲🇦JAUNE MOUSSEUX🇲🇦",
           flag: "🇲🇦",
-          name: "Hash Mousseux 🇲🇦",
+          name: "🇲🇦JAUNE MOUSSEUX🇲🇦",
           farm: "DexterSelection 🧤",
           promoEligible: true,
           type: "Hash",
-          image: "ProductHM.png",
-          video: "VideoHM.mp4",
+          image: "ProductJMM.png",
+          video: "VideoJMM.mov",
           description: "Résine provenance Maroc. Texture souple et facile à effriter. Fumée agréable, goût simple et équilibré. Idéal pour une détente légère au quotidien. 🧽🇲🇦",
           tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 160.0 },
-            { weight: "100g", price: 300.0 },
-          ],
-        }, */
-        {
-          id: "🟡 Crytical",
-          flag: "🇲🇦",
-          name: "🟡 Crytical",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "Hash",
-          image: "ProductCry.png",
-          video: "VideoCry.mp4",
-          description: "Résine jaune mousseuse, provenance Maroc. Texture souple et facile à effriter. Fumée douce, goût agréable aux notes sucrées et terreuses. Idéal pour une détente naturelle sans effet psychoactif.🧽🇲🇦",
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 160.0 },
-            { weight: "100g", price: 300.0 },
-          ],
-        },
-        {
-          id: "Jaune Mousseux – Maroc 🇲🇦",
-          flag: "🇲🇦",
-          name: "Jaune Mousseux 🧨",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "Hash",
-          image: "ProductJM.png",
-          video: "VideoJM.mp4",
-          description: "Texture légère et mousseuse 🌫️, couleur jaune éclatante ☀️, qualité premium 💎.\n Un produit authentique, rare et soigneusement sélectionné 🌿.",
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 160.0 },
-            { weight: "100g", price: 300.0 },
+            { weight: "10g", price: 50.0 },
           ],
         },
       ],
@@ -186,151 +152,36 @@ if (promoPopupClose) {
 
       products: [
       {
-          id: "PEACH OZZZ 🇺🇸",
+          id: "RAINBOW SHERBET🌈🍊",
           flag: "🇲🇦",
-          name: "PEACH OZZZ 🇺🇸",
-          farm: "DexterSelection 🧤",
+          name: "RAINBOW SHERBET🌈🍊",
+          farm: "🇲🇦VVS STATIC🇲🇦",
           promoEligible: true,
           type: "⚡️ Static",
-          image: "ProductPO.png",
-          video: "VideoPO.mp4",
-          description: `Une référence rare au profil intense et fruité, avec des notes de pêche et une signature aromatique très marquée. ✨
-
-💎 Produit recherché & haut de gamme
-🔥 Profil puissant et expressif
-🍑 Univers fruité / gourmand
-🇺🇸 Origine annoncée : USA
-
-DEXTER FARM — La sélection premium.`,
+          image: "ProductRS.png",
+          video: "VideoRS.mov",
+          description: " Static Premium 🇲🇦 – Ultra filtré, qualité brute et puissance extrême. Texture parfaite, résine pure, impact massif. Clairement réservé aux amateurs de très lourd.",
           tarifs: [
             { weight: "5g", price: 80.0 },
             { weight: "10g", price: 150.0 },
-            { weight: "20g", price: 280.0 },
           ],
         },
       {
-          id: "TANGERINE 🍊",
+          id: "PEACH OZ🍑",
           flag: "🇲🇦",
-          name: "TANGERINE 🍊",
+          name: "PEACH OZ🍑",
           farm: "DexterSelection 🧤",
           promoEligible: true,
           type: "⚡️ Static",
-          image: "ProductT.png",
-          video: "VideoT.mp4",
-          description: `🍊 PLASMA STATIC — TANGERINE 🇺🇸🇲🇦
-
-Un hash au profil intense, fruité et très aromatique, marqué par des notes de tangerine et une signature riche en terpènes. ✨
-
-💎 Sélection rare
-🍊 Profil agrumes & gourmand
-🔥 Texture et caractère prononcés
-
-DEXTER FARM — Sélection premium.`,
+          image: "ProductPOO.png",
+          video: "VideoPO.mov",
+          description: " Static Premium 🇲🇦 – Ultra filtré, qualité brute et puissance extrême. Texture parfaite, résine pure, impact massif. Clairement réservé aux amateurs de très lourd.",
           tarifs: [
             { weight: "5g", price: 80.0 },
             { weight: "10g", price: 150.0 },
-            { weight: "20g", price: 280.0 },
           ],
         },
-      {
-          id: "Coubaka Hash 🇲🇦",
-          flag: "🇲🇦",
-          name: "Coubaka Hash 🇲🇦",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "⚡️ Static",
-          image: "ProductCH.png",
-          video: "VideoCH.mp4",
-          description: "Une qualité ultra premium, travaillée avec précision pour offrir une richesse aromatique exceptionnelle.\n Un produit d’exception, puissant, savoureux et réservé aux vrais connaisseurs. 🍀",
-          tarifs: [
-            { weight: "5g", price: 80.0 },
-            { weight: "10g", price: 140.0 },
-          ],
-        },
-      /* {
-          id: "Static Premium 🇲🇦",
-          flag: "🇲🇦",
-          name: "Static Premium 🇲🇦",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "⚡️ Static",
-          image: "ProductSP.png",
-          video: "VideoSP.mov",
-          description: "Static Premium 🇲🇦 — une signature d’exception, pensée pour les amateurs de qualité pure. Une sélection rare, au caractère intense et à la finition irréprochable. Élégance, puissance et authenticité réunies dans un produit qui ne laisse aucune place au compromis.",
-          tarifs: [
-            { weight: "5g", price: 70.0 },
-            { weight: "50g", price: 450.0 },
-            { weight: "100g", price: 750.0 },
-          ],
-        }, */
-      {
-          id: "FFxXD Static Premium 🇲🇦",
-          flag: "🇲🇦",
-          name: "FFxXD 🇲🇦",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "⚡️ Static",
-          image: "ProductFF.png",
-          video: "VideoFF.mov",
-          description: "FFxXD Static Premium 🇲🇦 – Ultra filtré, qualité brute et puissance extrême. Texture parfaite, résine pure, impact massif. Clairement réservé aux amateurs de très lourd.",
-          tarifs: [
-            { weight: "5g", price: 70.0 },
-            { weight: "10g", price: 130.0 },
-            { weight: "50g", price: 450.0 },
-            { weight: "100g", price: 800.0 },
-          ],
-        },
-     /*  {
-          id: "Black Cherry 🇲🇦 🍒",
-          flag: "🇲🇦",
-          name: "Black Cherry 🇲🇦 🍒",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "⚡️ Static",
-          image: "ProductBC.png",
-          video: "VideoBC.mp4",
-          description: "Un produit d’exception issu du savoir-faire marocain, à la texture fine et soyeuse typique du static. Profil aromatique profond dominé par la cerise noire, avec des notes sucrées et délicatement boisées.\n Une qualité premium, pure et raffinée, offrant une signature élégante et authentique, destinée aux connaisseurs exigeants. ✨",
-          tarifs: [
-            { weight: "5g", price: 70.0 },
-            { weight: "10g", price: 130.0 },
-            { weight: "50g", price: 450.0 },
-            { weight: "100g", price: 800.0 },
-          ],
-        },
-      {
-          id: "ALL BLUE 🫐",
-          flag: "🇲🇦",
-          name: "ALL BLUE 🫐",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "⚡️ Static",
-          image: "ProductST.png",
-          video: "VideoST.mp4",
-          description: "– Origine Maroc 🇲🇦 \n Produit premium 💎, reconnu pour son goût intense et sa richesse aromatique 😋.\n Issu d’une sélection rigoureuse, il offre une expérience authentique, puissante et raffinée",
-          tarifs: [
-            { weight: "5g", price: 70.0 },
-            { weight: "10g", price: 130.0 },
-            { weight: "50g", price: 450.0 },
-            { weight: "100g", price: 800.0 },
-          ],
-        }, */
-      /* {
-          id: "Acapulco 🏝️",
-          flag: "🇲🇦",
-          name: "Acapulco 🏝️",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "⚡️ Static",
-          image: "ProductA.png",
-          video: "VideoA.mov",
-          description: "– Origine Maroc 🇲🇦 \n Produit premium 💎, reconnu pour sa qualité exceptionnelle et son goût intense 😋.\n Une sélection raffinée, offrant puissance, saveur et authenticité 🌿.\n\n Un incontournable pour les amateurs de produits haut de gamme 🚀.",
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "10g", price: 80.0 },
-            { weight: "50g", price: 230.0 },
-            { weight: "100g", price: 400.0 },
-          ],
-        }, */
+  
       ],
     },
     {
@@ -342,19 +193,21 @@ DEXTER FARM — Sélection premium.`,
 
       products: [
          {
-          id: "Hash Premium 3X Filtré 🇲🇦",
+          id: "SHERBET🍊",
           flag: "🇲🇦",
-          name: "3X Filtré 🇲🇦",
-          farm: "✅ NO FAMRS ✅",
+          name: "SHERBET🍊",
+          farm: "DexterSelection 🧤",
           promoEligible: true,
           type: "Filtre/Dry",
-          image: "Product3.jpg",
-          video: "Video3.mp4",
-          description:"Hash Premium 3X Filtré 🇲🇦 – Texture fine et maîtrisée, fumée douce, arômes propres et intenses. Une sélection soignée pour une qualité qui fait la différence.",
+          image: "ProductSH.png",
+          video: "VideoSH.mov",
+          description:"Hash 73U PRENIUM💎🇲🇦 – Texture fine et maîtrisée, fumée douce, arômes propres et intenses. Une sélection soignée pour une qualité qui fait la différence.",
           tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 230.0 },
-            { weight: "100g", price: 450.0 },
+            { weight: "5g", price: 40.0 },
+            { weight: "10g", price: 70.0 },
+            { weight: "25g", price: 110.0 },
+            { weight: "50g", price: 200.0 },
+            { weight: "100g", price: 380.0 },
           ],
         },
       ],
@@ -367,71 +220,21 @@ DEXTER FARM — Sélection premium.`,
       image: "CategFrozen.png",
 
       products: [
-         /* {
-          id: "Black Cherry 🇲🇦",
-          flag: "🇲🇦",
-          name: "Black Cherry 🇲🇦",
-          farm: "Mozart farm 🎻",
-          promoEligible: true,
-          type: "🧊 Frozen",
-          image: "ProductBCPP.png",
-          video: "VideoBCP.mp4",
-          description: "– Produit d’exception ultra exclusif. Texture givrée d’une pureté rare, finition irréprochable et intensité remarquable. Une signature haut de gamme, réservée aux connaisseurs exigeants. 🇲🇦",
-          tarifs: [
-            { weight: "5g", price: 60.0 },
-            { weight: "50g", price: 450.0 },
-            { weight: "100g", price: 800.0 },
-          ],
-        }, */
          {
-          id: "Black Cherry Punch 🇲🇦",
+          id: "🇲🇦FROZEN SIFT🇲🇦",
           flag: "🇲🇦",
-          name: "Black Cherry Punch 🇲🇦",
-          farm: "Mozart farm 🎻",
-          promoEligible: true,
-          type: "🧊 Frozen",
-          image: "ProductBCP.png",
-          video: "VideoBCPP.mp4",
-          description: "Variété premium aux arômes intenses de cerise noire, avec des notes sucrées et légèrement acidulées. Têtes compactes à l’aspect givré, qualité soignée.\n\n Origine Maroc 🇲🇦 — profil riche, saveurs fruitées et fraîches.",
-          tarifs: [
-            { weight: "5g", price: 60.0 },
-            { weight: "10g", price: 100.0 },
-            { weight: "50g", price: 350.0 },
-            { weight: "100g", price: 650.0 },
-          ],
-        },
-        /*  {
-          id: "PannaCotta 🍮",
-          flag: "🇲🇦",
-          name: "PannaCotta 🍮",
-          farm: "Mozart farm 🎻",
-          promoEligible: true,
-          type: "🧊 Frozen",
-          image: "ProductPanna.png",
-          video: "VideoPanna.mp4",
-          description: "– Origine Maroc 🇲🇦 \n Produit d’exception au standing supérieur, reconnu pour sa pureté, sa texture fine et ses arômes intenses 🌿\n\n 💎 Raffiné, savoureux et parfaitement maîtrisé, il s’adresse aux amateurs de qualité premium",
-          tarifs: [
-            { weight: "5g", price: 60.0 },
-            { weight: "10g", price: 100.0 },
-            { weight: "50g", price: 350.0 },
-            { weight: "100g", price: 650.0 },
-          ],
-        }, */
-         {
-          id: "G.M.O 🧬",
-          flag: "🇲🇦",
-          name: "G.M.O 🧬",
+          name: "🇲🇦 FROZEN SIFT 🇲🇦",
           farm: "DexterSelection 🧤",
           promoEligible: true,
           type: "🧊 Frozen",
-          image: "ProductPF.jpg",
-          video: "VideoPF.mov",
-          description: "G.M.O Frozen Shift 🇲🇦 – Extraction soignée, texture froide et raffinée. Profil aromatique puissant et complexe, fumée douce et propre. Une sélection haut de gamme au caractère unique.",
+          image: "ProductFS.png",
+          video: "VideoFS.mov",
+          description: "– Produit d’exception ultra exclusif. Texture givrée d’une pureté rare, finition irréprochable et intensité remarquable. Une signature haut de gamme, réservée aux connaisseurs exigeants. 🇲🇦",
           tarifs: [
             { weight: "5g", price: 60.0 },
             { weight: "10g", price: 100.0 },
-            { weight: "50g", price: 350.0 },
-            { weight: "100g", price: 650.0 },
+            { weight: "50g", price: 330.0 },
+            { weight: "100g", price: 600.0 },
           ],
         },
       ],
@@ -445,291 +248,86 @@ DEXTER FARM — Sélection premium.`,
 
       products: [
          {
-          id: "SUPER RUNTZ 🇺🇸",
+          id: "ZUSHI🐬",
           flag: "🇺🇸",
-          name: "SUPER RUNTZ 🇺🇸 ",
+          name: "ZUSHI🐬 ",
           farm: "DexterSelection 🧤",
           promoEligible: true,
           type: "🇺🇸 Cali US",
-          image: "ProductSR.jpg",
-          video: "",
-          description: `🆕 NOUVEAUTÉ — SUPER RUNTZ 🇺🇸
-
-Une variété recherchée au profil fruité, sucré et gourmand, issue de la famille Runtz. 🍬🍋
-
-✨ Profil premium
-🌿 Arômes intenses & terpènes expressifs
-🇺🇸 Origine annoncée : USA
-💎 Une référence pour les amateurs de profils haut de gamme
-
-DEXTER FARM — Sélection & qualité.`,
+          image: "ProductZ.png",
+          video: "VideoZ.mov",
+          description: `MEED SHELF PRENIUM🏆`,
           tarifs: [
             { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 350.0 },
-            { weight: "100g", price: 650.0 },
-          ],
-        },
-        /*  {
-          id: "🇺🇸 OG RUNTZ ",
-          flag: "🇺🇸",
-          name: "🇺🇸 OG RUNTZ ",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🇺🇸 Cali US",
-          image: "ProductOR.png",
-          video: "VideoOR.mov",
-          description: `DEXTER FARM présente une sélection rare à l’identité premium, reconnue pour son profil qualitatif et son caractère exclusif. 💎
-
-✨ Provenance : États-Unis
-🔥 Sélection haut de gamme
-🍬 Profil aromatique riche et travaillé
-⭐ Produit rare & recherché`,
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 350.0 },
-            { weight: "100g", price: 650.0 },
+            { weight: "10g", price: 90.0 },
+            { weight: "25g", price: 150.0 },
+            { weight: "50g", price: 280.0 },
+            { weight: "100g", price: 550.0 },
           ],
         },
          {
-          id: "🐾 ANIMAL FACE RUNTZ 🐾",
+          id: "ORANGE BERRY🍊",
           flag: "🇺🇸",
-          name: "🐾 ANIMAL FACE RUNTZ 🐾",
+          name: "ORANGE BERRY🍊 ",
           farm: "DexterSelection 🧤",
           promoEligible: true,
           type: "🇺🇸 Cali US",
-          image: "ProductAF.png",
-          video: "VideoAF.mp4",
-          description: `🔥 NOUVELLE CALI 🇺🇸
-🇺🇸 Origine US — une variété ultra raffinée
-
-💎 Profil premium
-🍭 Explosion de saveurs
-🌿 Arômes riches et intenses
-✨ Une nouveauté à découvrir chez DEXTER FARM
-
-🔥 DISPONIBLE DÈS MAINTENANT`,
+          image: "ProductOB.png",
+          video: "VideoOB.mov",
+          description: `MEED SHELF PRENIUM🏆`,
           tarifs: [
             { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 350.0 },
-            { weight: "100g", price: 650.0 },
-          ],
-        }, */
-         {
-          id: "🍁 MAPLE LEAF 🍁",
-          flag: "🇺🇸",
-          name: "🍁 MAPLE LEAF 🍁",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🇺🇸 Cali US",
-          image: "ProductML.jpg",
-          video: "",
-          description: "🇺🇸 Une variété super raffinée, au profil gustatif exceptionnel.\n 💥 Explosion de saveurs dès la première dégustation, avec des notes riches et intenses.\n ✨ MAPLE LEAF — finesse, caractère & plaisir.",
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 350.0 },
-            { weight: "100g", price: 600.0 },
-          ],
-        },
-        /*  {
-          id: "Runtz Cali 🇺🇸",
-          flag: "🇺🇸",
-          name: "Runtz Cali 🇺🇸",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🇺🇸 Cali US",
-          image: "ProductRC.png",
-          video: "VideoRC.mp4",
-          description: "Mexicana Runtz Cali 🇺🇸 produit rare, sélection premium venue de Californie.\n Une variété d’exception, reconnue pour son profil aromatique intense et sa qualité haut de gamme.\n Des notes sucrées et fruitées parfaitement équilibrées, offrant une expérience riche et unique.\n Un produit ultra premium réservé aux véritables amateurs de génétique californienne d’élite. 🍀",
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 350.0 },
-            { weight: "100g", price: 650.0 },
-          ],
-        }, */
-        /*  {
-          id: "GORILLA RUNTZ 🍀",
-          flag: "🇺🇸",
-          name: "GORILLA RUNTZ 🍀",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🇺🇸 Cali US",
-          image: "ProductGR.png",
-          video: "VideoGR.mp4",
-          description: "Luxe extrême, puissance absolue.\n 💎 Une pièce rare au goût sucré et à l’intensité hors norme… l’élite seulement.",
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 350.0 },
-            { weight: "100g", price: 650.0 },
-          ],
-        }, */
-         {
-          id: "Chantilly Runtz 🍀",
-          flag: "🇺🇸",
-          name: "Chantilly Runtz 🍀",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🇺🇸 Cali US",
-          image: "ProductCR.png",
-          video: "VideoCR.mov",
-          description: "Niveau élite, signature californienne. Crémeuse, blindée de résine, impact direct. Clairement pas pour tout le monde.",
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 350.0 },
-            { weight: "100g", price: 650.0 },
-          ],
-        },
-        /*  {
-          id: "🍀 Candy Gelato",
-          flag: "🇺🇸",
-          name: "🍀 Candy Gelato",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🇺🇸 Cali US",
-          image: "ProductCG.png",
-          video: "VideoCG.mov",
-          description: "Cali US 🍀 – Explosion sucrée, résine brillante, puissance maîtrisée. Un pur bijou californien qui ne laisse aucune chance à l’ordinaire",
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 350.0 },
-            { weight: "100g", price: 650.0 },
-          ],
-        }, */
-        /*  {
-          id: "🍀 Rainbow Cookie",
-          flag: "🇺🇸",
-          name: "🍀 Rainbow Cookie",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🇺🇸 Cali US",
-          image: "ProductR.png",
-          video: "VideoR.mov",
-          description: "Cali US 🍀 – Dense, résineuse, ultra gourmande. Une signature premium qui frappe dès la première bouffée.",
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 350.0 },
-            { weight: "100g", price: 650.0 },
-          ],
-        }, */
-         /* {
-          id: "🍀 MAC RS11",
-          flag: "🇺🇸",
-          name: "🍀 MAC RS11",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🇺🇸 Cali US",
-          image: "Product11.png",
-          video: "Video11.mov",
-          description: "Cali US 🍀 – Fleur d’exception importée, structure compacte et résineuse. Profil aromatique riche et sophistiqué, fumée douce et enveloppante. Une génétique haut de gamme pour une expérience raffinée.",
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 350.0 },
-            { weight: "100g", price: 650.0 },
-          ],
-        }, */
-         /* {
-          id: "Lemon Cherry Gelato 🍋🍒",
-          flag: "🇺🇸",
-          name: "Lemon Cherry Gelato 🍋🍒",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🇺🇸 Cali US",
-          image: "ProductLCG.png",
-          video: "VideoLCG.mov",
-          description: "Une génétique d’exception au profil aromatique sophistiqué, où la fraîcheur du citron se mêle à la rondeur sucrée de la cerise. Têtes parfaitement formées, denses et résineuses, au visuel irréprochable.\n Une signature haut de gamme, pensée pour les amateurs exigeants en quête d’une expérience raffinée et distinctive. ✨",
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 350.0 },
-            { weight: "100g", price: 650.0 },
-          ],
-        }, */
-         /* {
-          id: "AK-47 Runtz",
-          flag: "🇺🇸",
-          name: " AK-47 Runtz 🔫",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🇺🇸 Cali US",
-          image: "ProductAK.png",
-          video: "VideoAK.mov",
-          description: "– Cali US 💎\n Une Cali très compacte, au visuel soigné et à la structure dense 🌿\n\n ⚡️ Profil puissant et concentré, réservé aux amateurs de sensations marquées\n\n 😋 En bouche, une expérience riche, prononcée et mémorable\n\n 💎 Un produit qui sort clairement du commun, taillé pour le haut de gamme",
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 350.0 },
-            { weight: "100g", price: 650.0 },
-          ],
-        }, */
-        /*  {
-          id: "🇺🇸 White Runtz",
-          flag: "🇺🇸",
-          name: " White Runtz 🍥",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🇺🇸 Cali US",
-          image: "ProductWR.png",
-          video: "VideoWR.mp4",
-          description: "– Cali US 💎\n Une variété iconique au profil unique, marquée par des notes sucrées et gourmandes 🌿\n\n ✨ Texture soignée, goût prononcé et longueur en bouche remarquable\n 🔥 Une pépite rare, réservée aux amateurs de produits vraiment premium",
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 350.0 },
-            { weight: "100g", price: 650.0 },
-          ],
-        }, */
-         /* {
-          id: "🌴 Tropical Candy",
-          flag: "🇺🇸",
-          name: "🌴 Tropical Candy",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🇺🇸 Cali US",
-          image: "ProductTC.png",
-          video: "VideoTC.mp4",
-          description: "Plongez dans une expérience ultra gourmande avec la Tropical Candy 🍍, un produit intensément fruité et exceptionnel en bouche 😋.\n Ses saveurs exotiques apportent une fraîcheur sucrée irrésistible, avec un équilibre parfait entre douceur et caractère 🌿.",
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 350.0 },
-            { weight: "100g", price: 650.0 },
+            { weight: "10g", price: 90.0 },
+            { weight: "25g", price: 150.0 },
+            { weight: "50g", price: 280.0 },
+            { weight: "100g", price: 550.0 },
           ],
         },
          {
-          id: "Cali Chantilly 🍦",
+          id: "FINE CHERRY🍒",
           flag: "🇺🇸",
-          name: "Cali Chantilly 🍦",
+          name: "FINE CHERRY🍒 ",
           farm: "DexterSelection 🧤",
           promoEligible: true,
           type: "🇺🇸 Cali US",
-          image: "ProductC.png",
-          video: "VideoC.mov",
-          description: "Découvrez la Cali Chantilly, un produit haut de gamme 💎 reconnu pour son goût intense et sa qualité incomparable 😋.\n Sa texture légère et crémeuse offre une expérience unique, alliant douceur et puissance 🌿.",
+          image: "ProductFC.png",
+          video: "VideoFC.mov",
+          description: `MEED SHELF PRENIUM🏆`,
           tarifs: [
             { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 350.0 },
-            { weight: "100g", price: 650.0 },
+            { weight: "10g", price: 90.0 },
+            { weight: "25g", price: 150.0 },
+            { weight: "50g", price: 280.0 },
+            { weight: "100g", price: 550.0 },
           ],
-        }, */
+        },
+         
       ],
     },
     {
-      id: "HOLLANDAISE",
-      name: "🇳🇱 HOLLANDAISE",
-      type: "Hollandaise",
-      quality: "🇳🇱 Hollandaise",
-      image: "CategCaliH.png", // Ton image de catégorie Weed
+      id: "🇪🇸WEED SPAIN🇪🇸",
+      name: "🇪🇸WEED SPAIN🇪🇸",
+      type: "🇪🇸WEED SPAIN🇪🇸",
+      quality: "🇪🇸WEED SPAIN🇪🇸",
+      image: "CategCaliS.png", // Ton image de catégorie Weed
 
       products: [
          {
           id: "AMNESIA KUSH 🍀",
-          flag: "🇳🇱",
+          flag: "🇪🇸",
           name: "AMNESIA KUSH 🍀",
           farm: "DexterSelection 🧤",
           promoEligible: true,
-          type: "🇳🇱 Hollandaise",
-          image: "ProductAmne.png",
-          video: "VideoAmne.mov",
-          description: "AMNESIA KUSH 🍀 — une variété emblématique au savoir-faire ancien, pensée pour les palais raffinés. Un classique intemporel, puissant, riche en caractère et en authenticité. 🇳🇱",
+          type: "🇪🇸 Spain",
+          image: "ProductAH.png",
+          video: "VideoAH.mov",
+          description: "AMNESIA KUSH 🍀 — une variété emblématique au savoir-faire ancien, pensée pour les palais raffinés. Un classique intemporel, puissant, riche en caractère et en authenticité. 🇪🇸",
           tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "50g", price: 280.0 },
-            { weight: "100g", price: 450.0 },
+            { weight: "5g", price: 40.0 },
+            { weight: "10g", price: 60.0 },
+            { weight: "25g", price: 120.0 },
+            { weight: "50g", price: 210.0 },
+            { weight: "100g", price: 400.0 },
           ],
         },
       ],
@@ -742,39 +340,25 @@ DEXTER FARM — Sélection & qualité.`,
       image: "CategZip.png",
       products: [
          {
-          id: "Caroline Suri 💃",
-          flag: "🇸🇷",
-          name: "Caroline 💃",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "❄️ Zip",
-          image: "ProductCaro.png",
-          video: "VideoCaro.mov",
-          description: "– Origine Suriname 🇸🇷\n  Pureté exceptionnelle 98%, aucune coupe. Texture propre, finition irréprochable et intensité remarquable. Un produit de très haut standing, réservé aux connaisseurs exigeants",
-          tarifs: [
-            { weight: "1g", price: 60.0 },
-            { weight: "5g", price: 250.0 },
-            { weight: "10g", price: 400.0 },
-          ],
-        },
-         {
           id: "🇧🇴 Caroline Bolivie 💎🔥",
           flag: "🇧🇴",
           name: "Caroline Boli 💎🔥",
           farm: "DexterSelection 🧤",
           promoEligible: true,
           type: "❄️ Zip",
-          image: "ProductBoli.png",
-          video: "VideoBoli.mov",
+          image: "ProductBL.png",
+          video: "VideoBL.mov",
           description: "Caroline Bolivienne 🇧🇴 — une texture légèrement plus grasse que la Suriname, offrant une expérience plus ronde et enveloppante. Toujours aussi exceptionnelle, elle se distingue par une dégustation plus douce, plus agréable et parfaitement maîtrisée. Un produit d’initié, raffiné et irrésistible.",
           tarifs: [
-            { weight: "1g", price: 60.0 },
-            { weight: "5g", price: 250.0 },
-            { weight: "10g", price: 450.0 },
+            { weight: "1b", price: 60.0 },
+            { weight: "3b", price: 120.0 },
+            { weight: "5b", price: 200.0 },
+            { weight: "10b", price: 350.0 },
           ],
         },
       ],
     }
+    
   ];
 
   // --- VARIABLES D'ÉTAT ---
