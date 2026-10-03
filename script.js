@@ -94,7 +94,7 @@ if (promoPopupClose) {
   
   // --- CATALOGUE DEXTER FARM : PRODUITS ---
   const appData = [
-     {
+    /*  {
       id: "PIATELA",
       name: "🍨 PIATELA",
       type: "Piatela",
@@ -102,23 +102,9 @@ if (promoPopupClose) {
       image: "CategPiat.png",
 
       products: [
-        /*   {
-          id: "Rainbow Shebat",
-          flag: "🇲🇦",
-          name: "Rainbow Shebat & Cap Junky 🍦",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🍨 Piatela",
-          image: "ProductPI.png",
-          video: "VideoPI.mp4",
-          description: "Piatela 🇺🇸 – Sélection d’exception en provenance d’Amérique. Texture travaillée avec précision, profil riche et complexe, offrant une expérience intense et raffinée. Un produit de luxe, destiné à un public averti en quête de qualité supérieure.",
-          tarifs: [
-            { weight: "2g", price: 70.0 },
-            { weight: "5g", price: 160.0 },
-          ],
-        }, */
+      
       ],
-    },
+    }, */
     {
       id: "MOUSSEUX",
       name: "🍫 MOUSSEUX",
