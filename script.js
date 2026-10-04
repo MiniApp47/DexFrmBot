@@ -207,6 +207,21 @@ if (promoPopupClose) {
 
       products: [
          {
+          id: "GMO🍪",
+          flag: "🇲🇦",
+          name: "GMO 🍪",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "🧊 Frozen",
+          image: "ProductGMO.jpg",
+          video: "VideoGMO.mp4",
+          description: "🇲🇦OLIVE FRESH FROZEN🇲🇦",
+          tarifs: [
+            { weight: "1/2 olive", price: 60.0 },
+            { weight: "1 olive", price: 100.0 },
+          ],
+        },
+         {
           id: "🇲🇦FROZEN SIFT🇲🇦",
           flag: "🇲🇦",
           name: "🇲🇦 FROZEN SIFT 🇲🇦",
