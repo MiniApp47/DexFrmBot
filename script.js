@@ -223,7 +223,7 @@ if (promoPopupClose) {
       image: "CategFrozen.png",
 
       products: [
-         {
+         /* {
           id: "GMO🍪",
           flag: "🇲🇦",
           name: "GMO 🍪",
@@ -254,7 +254,7 @@ if (promoPopupClose) {
             { weight: "50g", price: 330.0 },
             { weight: "100g", price: 600.0 },
           ],
-        },
+        }, */
       ],
     },
     {
