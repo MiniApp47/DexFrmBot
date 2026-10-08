@@ -138,6 +138,23 @@ if (promoPopupClose) {
 
       products: [
       {
+          id: "WATERMELON🍉",
+          flag: "🇲🇦",
+          name: "WATERMELON🍉",
+          farm: "🇲🇦DOUBLE STATIC PLASMA🇲🇦",
+          promoEligible: true,
+          type: "⚡️ Static",
+          image: "ProductW.jpg",
+          video: "VideoW.mp4",
+          description: " 🇲🇦DOUBLE STATIC PLASMA🇲🇦 – CATÉGORIE : PRENIUM💎",
+          tarifs: [
+            { weight: "5g", price: 70.0 },
+            { weight: "10g", price: 130.0 },
+            { weight: "25g", price: 220.0 },
+            { weight: "50g", price: 430.0 },
+          ],
+        },
+      {
           id: "RAINBOW SHERBET🌈🍊",
           flag: "🇲🇦",
           name: "RAINBOW SHERBET🌈🍊",
