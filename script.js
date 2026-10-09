@@ -223,6 +223,23 @@ if (promoPopupClose) {
       image: "CategFrozen.png",
 
       products: [
+        {
+          id: "WHITE OG🍄‍🟫",
+          flag: "🇲🇦",
+          name: "WHITE OG🍄‍🟫",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "🧊 Frozen",
+          image: "ProductWO.jpg",
+          video: "VideoWO.mp4",
+          description: "🇲🇦FRESH FROZEN🇲🇦",
+          tarifs: [
+            { weight: "5g", price: 60.0 },
+            { weight: "10g", price: 100.0 },
+            { weight: "25g", price: 220.0 },
+            { weight: "50g", price: 400.0 },
+          ],
+        },
          /* {
           id: "GMO🍪",
           flag: "🇲🇦",
