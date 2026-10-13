@@ -169,7 +169,7 @@ if (promoPopupClose) {
             { weight: "10g", price: 150.0 },
           ],
         },
-      {
+     /*  {
           id: "PEACH OZ🍑",
           flag: "🇲🇦",
           name: "PEACH OZ🍑",
@@ -183,7 +183,7 @@ if (promoPopupClose) {
             { weight: "5g", price: 80.0 },
             { weight: "10g", price: 150.0 },
           ],
-        },
+        }, */
   
       ],
     },
@@ -283,6 +283,42 @@ if (promoPopupClose) {
 
       products: [
          {
+          id: "GUMBO PUNCH🍓🍬",
+          flag: "🇺🇸",
+          name: "GUMBO PUNCH🍓🍬",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "🇺🇸 Cali US",
+          image: "ProductGP.jpg",
+          video: "VideoGP.mp4",
+          description: `MEED SHELF PRENIUM🏆`,
+          tarifs: [
+            { weight: "5g", price: 50.0 },
+            { weight: "10g", price: 90.0 },
+            { weight: "25g", price: 150.0 },
+            { weight: "50g", price: 280.0 },
+            { weight: "100g", price: 550.0 },
+          ],
+        },
+         {
+          id: "CHERRY SKITELEZ🍒🍬",
+          flag: "🇺🇸",
+          name: "CHERRY SKITELEZ🍒🍬 ",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "🇺🇸 Cali US",
+          image: "ProductCS.jpg",
+          video: "VideoCS.mp4",
+          description: `MEED SHELF PRENIUM🏆`,
+          tarifs: [
+            { weight: "5g", price: 50.0 },
+            { weight: "10g", price: 90.0 },
+            { weight: "25g", price: 150.0 },
+            { weight: "50g", price: 280.0 },
+            { weight: "100g", price: 550.0 },
+          ],
+        },
+        /*  {
           id: "ZUSHI🐬",
           flag: "🇺🇸",
           name: "ZUSHI🐬 ",
@@ -299,7 +335,7 @@ if (promoPopupClose) {
             { weight: "50g", price: 280.0 },
             { weight: "100g", price: 550.0 },
           ],
-        },
+        }, */
          {
           id: "ORANGE BERRY🍊",
           flag: "🇺🇸",
@@ -318,7 +354,7 @@ if (promoPopupClose) {
             { weight: "100g", price: 550.0 },
           ],
         },
-         {
+        /*  {
           id: "FINE CHERRY🍒",
           flag: "🇺🇸",
           name: "FINE CHERRY🍒 ",
@@ -335,7 +371,7 @@ if (promoPopupClose) {
             { weight: "50g", price: 280.0 },
             { weight: "100g", price: 550.0 },
           ],
-        },
+        }, */
          
       ],
     },
