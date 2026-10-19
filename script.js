@@ -113,7 +113,7 @@ if (promoPopupClose) {
       image: "CategJaune.png",
 
       products: [
-        {
+       /*  {
           id: "🇲🇦JAUNE MOUSSEUX🇲🇦",
           flag: "🇲🇦",
           name: "🇲🇦JAUNE MOUSSEUX🇲🇦",
@@ -126,7 +126,7 @@ if (promoPopupClose) {
           tarifs: [
             { weight: "10g", price: 50.0 },
           ],
-        },
+        }, */
       ],
     },
     {
@@ -383,7 +383,7 @@ if (promoPopupClose) {
       image: "CategCaliS.png", // Ton image de catégorie Weed
 
       products: [
-         {
+        /*  {
           id: "AMNESIA KUSH 🍀",
           flag: "🇪🇸",
           name: "AMNESIA KUSH 🍀",
@@ -400,7 +400,7 @@ if (promoPopupClose) {
             { weight: "50g", price: 210.0 },
             { weight: "100g", price: 400.0 },
           ],
-        },
+        }, */
       ],
     },
     {
