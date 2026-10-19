@@ -411,6 +411,22 @@ if (promoPopupClose) {
       image: "CategZip.png",
       products: [
          {
+          id: "🇩🇴CARO REP DOM",
+          flag: "🇩🇴",
+          name: "🇩🇴CARO REP DOM",
+          farm: "JACOB & CO🇩🇴",
+          promoEligible: true,
+          type: "❄️ Zip",
+          image: "ProductCRD.jpg",
+          video: "VideoCRD.mp4",
+          description: "TYPE : PUR 0,9💎",
+          tarifs: [
+            { weight: "1b", price: 60.0 },
+            { weight: "3b", price: 120.0 },
+            { weight: "5b", price: 200.0 },
+          ],
+        },
+         {
           id: "🇧🇴 Caroline Bolivie 💎🔥",
           flag: "🇧🇴",
           name: "Caroline Boli 💎🔥",
