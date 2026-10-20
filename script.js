@@ -113,6 +113,26 @@ if (promoPopupClose) {
       image: "CategJaune.png",
 
       products: [
+        {
+          id: "🇲🇦JAUNE MOUSSEUX🇲🇦",
+          flag: "🇲🇦",
+          name: "🇲🇦JAUNE MOUSSEUX🇲🇦",
+          farm: " STARBUCK COFFEE🇲🇦",
+          promoEligible: true,
+          type: "Hash",
+          image: "ProductJMMM.jpg",
+          video: "VideoJMMM.mp4",
+          description: "",
+          tarifs: [
+            { weight: "10g", price: 50.0 },
+            { weight: "25g", price: 90.0 },
+            { weight: "50g", price: 140.0 },
+            { weight: "100g", price: 260.0 },
+            { weight: "500g", price: 1050.0 },
+            { weight: "1Kg", price: 2050.0 },
+
+          ],
+        },
        /*  {
           id: "🇲🇦JAUNE MOUSSEUX🇲🇦",
           flag: "🇲🇦",
@@ -376,23 +396,23 @@ if (promoPopupClose) {
       ],
     },
     {
-      id: "🇪🇸WEED SPAIN🇪🇸",
-      name: "🇪🇸WEED SPAIN🇪🇸",
-      type: "🇪🇸WEED SPAIN🇪🇸",
-      quality: "🇪🇸WEED SPAIN🇪🇸",
-      image: "CategCaliS.png", // Ton image de catégorie Weed
+      id: "🇳🇱HOLLANDA GROW🇳🇱",
+      name: "🇳🇱HOLLANDA GROW🇳🇱",
+      type: "🇳🇱HOLLANDA GROW🇳🇱",
+      quality: "🇳🇱HOLLANDA GROW🇳🇱",
+      image: "CategCaliH.png", // Ton image de catégorie Weed
 
       products: [
-        /*  {
-          id: "AMNESIA KUSH 🍀",
-          flag: "🇪🇸",
-          name: "AMNESIA KUSH 🍀",
+         {
+          id: "AMNESIA HAZE🌱",
+          flag: "🇳🇱",
+          name: "AMNESIA HAZE🌱",
           farm: "DexterSelection 🧤",
           promoEligible: true,
-          type: "🇪🇸 Spain",
-          image: "ProductAH.png",
-          video: "VideoAH.mov",
-          description: "AMNESIA KUSH 🍀 — une variété emblématique au savoir-faire ancien, pensée pour les palais raffinés. Un classique intemporel, puissant, riche en caractère et en authenticité. 🇪🇸",
+          type: "🇳🇱Holland",
+          image: "ProductAH.jpg",
+          video: "VideoAH.mp4",
+          description: "AMNESIA HAZE 🌱 — une variété emblématique au savoir-faire ancien, pensée pour les palais raffinés. Un classique intemporel, puissant, riche en caractère et en authenticité. 🇳🇱",
           tarifs: [
             { weight: "5g", price: 40.0 },
             { weight: "10g", price: 60.0 },
@@ -400,7 +420,7 @@ if (promoPopupClose) {
             { weight: "50g", price: 210.0 },
             { weight: "100g", price: 400.0 },
           ],
-        }, */
+        },
       ],
     },
     {
