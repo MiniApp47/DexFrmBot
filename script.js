@@ -406,6 +406,42 @@ if (promoPopupClose) {
 
       products: [
          {
+          id: "BLACK ICE🧊",
+          flag: "🇺🇸",
+          name: "BLACK ICE🧊",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "🇺🇸 Cali US",
+          image: "ProductBI.jpg",
+          video: "VideoBI.mp4",
+          description: `MEED SHELF PRENIUM🏆`,
+          tarifs: [
+            { weight: "5g", price: 50.0 },
+            { weight: "10g", price: 90.0 },
+            { weight: "25g", price: 150.0 },
+            { weight: "50g", price: 280.0 },
+            { weight: "100g", price: 550.0 },
+          ],
+        },
+         {
+          id: "APPLE TARTZ🍏",
+          flag: "🇺🇸",
+          name: "APPLE TARTZ🍏",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "🇺🇸 Cali US",
+          image: "ProductAT.jpg",
+          video: "VideoAT.mp4",
+          description: `MEED SHELF PRENIUM🏆`,
+          tarifs: [
+            { weight: "5g", price: 50.0 },
+            { weight: "10g", price: 90.0 },
+            { weight: "25g", price: 150.0 },
+            { weight: "50g", price: 280.0 },
+            { weight: "100g", price: 550.0 },
+          ],
+        },
+         {
           id: "GUMBO PUNCH🍓🍬",
           flag: "🇺🇸",
           name: "GUMBO PUNCH🍓🍬",
