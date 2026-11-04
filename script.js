@@ -114,6 +114,24 @@ if (promoPopupClose) {
 
       products: [
         {
+          id: "🇺🇸JAUNE MOUSSEUX🇺🇸",
+          flag: "🇺🇸",
+          name: "🇺🇸JAUNE MOUSSEUX🇺🇸",
+          farm: "🇺🇸CALI MOUSSE 2026🇺🇸",
+          promoEligible: true,
+          type: "Hash",
+          image: "ProductCM.jpg",
+          video: "VideoCM.mp4",
+          description: "",
+          tarifs: [
+            { weight: "10g", price: 60.0 },
+            { weight: "25g", price: 100.0 },
+            { weight: "50g", price: 160.0 },
+            { weight: "100g", price: 300.0 },
+
+          ],
+        },
+        {
           id: "🇲🇦JAUNE MOUSSEUX🇲🇦",
           flag: "🇲🇦",
           name: "🇲🇦JAUNE MOUSSEUX🇲🇦",
@@ -133,20 +151,6 @@ if (promoPopupClose) {
 
           ],
         },
-       /*  {
-          id: "🇲🇦JAUNE MOUSSEUX🇲🇦",
-          flag: "🇲🇦",
-          name: "🇲🇦JAUNE MOUSSEUX🇲🇦",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "Hash",
-          image: "ProductJMM.png",
-          video: "VideoJMM.mov",
-          description: "Résine provenance Maroc. Texture souple et facile à effriter. Fumée agréable, goût simple et équilibré. Idéal pour une détente légère au quotidien. 🧽🇲🇦",
-          tarifs: [
-            { weight: "10g", price: 50.0 },
-          ],
-        }, */
       ],
     },
     {
@@ -158,23 +162,6 @@ if (promoPopupClose) {
 
       products: [
       {
-          id: "PREMIUM GOLD⚡️",
-          flag: "🇲🇦",
-          name: "PREMIUM GOLD⚡️",
-          farm: "🇲🇦STATIC PLASMA🇲🇦",
-          promoEligible: true,
-          type: "⚡️ Static",
-          image: "ProductPG.jpg",
-          video: "VideoPG.mp4",
-          description: " 🇲🇦STATIC PLASMA🇲🇦– CATÉGORIE : PRENIUM💎",
-          tarifs: [
-            { weight: "5g", price: 80.0 },
-            { weight: "10g", price: 150.0 },
-            { weight: "25g", price: 280.0 },
-            { weight: "50g", price: 450.0 },
-          ],
-        },
-      {
           id: "ORANGE CANDY🍊",
           flag: "🇲🇦",
           name: "ORANGE CANDY🍊",
@@ -183,23 +170,6 @@ if (promoPopupClose) {
           type: "⚡️ Static",
           image: "ProductOC.jpg",
           video: "VideoOC.mp4",
-          description: " 🇲🇦STATIC PLASMA🇲🇦– CATÉGORIE : PRENIUM💎",
-          tarifs: [
-            { weight: "5g", price: 80.0 },
-            { weight: "10g", price: 150.0 },
-            { weight: "25g", price: 280.0 },
-            { weight: "50g", price: 450.0 },
-          ],
-        },
-      {
-          id: "BLUCCI🫐",
-          flag: "🇲🇦",
-          name: "BLUCCI🫐",
-          farm: "🇲🇦STATIC PLASMA🇲🇦",
-          promoEligible: true,
-          type: "⚡️ Static",
-          image: "ProductB.jpg",
-          video: "VideoB.mp4",
           description: " 🇲🇦STATIC PLASMA🇲🇦– CATÉGORIE : PRENIUM💎",
           tarifs: [
             { weight: "5g", price: 80.0 },
@@ -225,70 +195,6 @@ if (promoPopupClose) {
             { weight: "50g", price: 450.0 },
           ],
         },
-      {
-          id: "IPANEMA🍇",
-          flag: "🇲🇦",
-          name: "IPANEMA🍇",
-          farm: "🇲🇦STATIC PLASMA🇲🇦",
-          promoEligible: true,
-          type: "⚡️ Static",
-          image: "ProductI.jpg",
-          video: "VideoI.mp4",
-          description: " 🇲🇦STATIC PLASMA🇲🇦– CATÉGORIE : PRENIUM💎",
-          tarifs: [
-            { weight: "5g", price: 80.0 },
-            { weight: "10g", price: 150.0 },
-            { weight: "25g", price: 280.0 },
-            { weight: "50g", price: 450.0 },
-          ],
-        },
-      {
-          id: "WATERMELON🍉",
-          flag: "🇲🇦",
-          name: "WATERMELON🍉",
-          farm: "🇲🇦DOUBLE STATIC PLASMA🇲🇦",
-          promoEligible: true,
-          type: "⚡️ Static",
-          image: "ProductW.jpg",
-          video: "VideoW.mp4",
-          description: " 🇲🇦DOUBLE STATIC PLASMA🇲🇦 – CATÉGORIE : PRENIUM💎",
-          tarifs: [
-            { weight: "5g", price: 70.0 },
-            { weight: "10g", price: 130.0 },
-            { weight: "25g", price: 220.0 },
-            { weight: "50g", price: 430.0 },
-          ],
-        },
-      {
-          id: "RAINBOW SHERBET🌈🍊",
-          flag: "🇲🇦",
-          name: "RAINBOW SHERBET🌈🍊",
-          farm: "🇲🇦VVS STATIC🇲🇦",
-          promoEligible: true,
-          type: "⚡️ Static",
-          image: "ProductRS.png",
-          video: "VideoRS.mov",
-          description: " Static Premium 🇲🇦 – Ultra filtré, qualité brute et puissance extrême. Texture parfaite, résine pure, impact massif. Clairement réservé aux amateurs de très lourd.",
-          tarifs: [
-            { weight: "5g", price: 80.0 },
-            { weight: "10g", price: 150.0 },
-          ],
-        },
-     /*  {
-          id: "PEACH OZ🍑",
-          flag: "🇲🇦",
-          name: "PEACH OZ🍑",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "⚡️ Static",
-          image: "ProductPOO.png",
-          video: "VideoPO.mov",
-          description: " Static Premium 🇲🇦 – Ultra filtré, qualité brute et puissance extrême. Texture parfaite, résine pure, impact massif. Clairement réservé aux amateurs de très lourd.",
-          tarifs: [
-            { weight: "5g", price: 80.0 },
-            { weight: "10g", price: 150.0 },
-          ],
-        }, */
   
       ],
     },
@@ -318,24 +224,6 @@ if (promoPopupClose) {
             { weight: "100g", price: 450.0 },
           ],
         },
-         {
-          id: "SHERBET🍊",
-          flag: "🇲🇦",
-          name: "SHERBET🍊",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "Filtre/Dry",
-          image: "ProductSH.png",
-          video: "VideoSH.mov",
-          description:"Hash 73U PRENIUM💎🇲🇦 – Texture fine et maîtrisée, fumée douce, arômes propres et intenses. Une sélection soignée pour une qualité qui fait la différence.",
-          tarifs: [
-            { weight: "5g", price: 40.0 },
-            { weight: "10g", price: 70.0 },
-            { weight: "25g", price: 110.0 },
-            { weight: "50g", price: 200.0 },
-            { weight: "100g", price: 380.0 },
-          ],
-        },
       ],
     },
     {
@@ -346,55 +234,7 @@ if (promoPopupClose) {
       image: "CategFrozen.png",
 
       products: [
-        {
-          id: "WHITE OG🍄‍🟫",
-          flag: "🇲🇦",
-          name: "WHITE OG🍄‍🟫",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🧊 Frozen",
-          image: "ProductWO.jpg",
-          video: "VideoWO.mp4",
-          description: "🇲🇦FRESH FROZEN🇲🇦",
-          tarifs: [
-            { weight: "5g", price: 60.0 },
-            { weight: "10g", price: 100.0 },
-            { weight: "25g", price: 220.0 },
-            { weight: "50g", price: 400.0 },
-          ],
-        },
-         /* {
-          id: "GMO🍪",
-          flag: "🇲🇦",
-          name: "GMO 🍪",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🧊 Frozen",
-          image: "ProductGMO.jpg",
-          video: "VideoGMO.mp4",
-          description: "🇲🇦OLIVE FRESH FROZEN🇲🇦",
-          tarifs: [
-            { weight: "1/2 olive", price: 60.0 },
-            { weight: "1 olive", price: 100.0 },
-          ],
-        },
-         {
-          id: "🇲🇦FROZEN SIFT🇲🇦",
-          flag: "🇲🇦",
-          name: "🇲🇦 FROZEN SIFT 🇲🇦",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🧊 Frozen",
-          image: "ProductFS.png",
-          video: "VideoFS.mov",
-          description: "– Produit d’exception ultra exclusif. Texture givrée d’une pureté rare, finition irréprochable et intensité remarquable. Une signature haut de gamme, réservée aux connaisseurs exigeants. 🇲🇦",
-          tarifs: [
-            { weight: "5g", price: 60.0 },
-            { weight: "10g", price: 100.0 },
-            { weight: "50g", price: 330.0 },
-            { weight: "100g", price: 600.0 },
-          ],
-        }, */
+
       ],
     },
     {
@@ -406,14 +246,14 @@ if (promoPopupClose) {
 
       products: [
          {
-          id: "BLACK ICE🧊",
+          id: "JENNY KUSH🥭",
           flag: "🇺🇸",
-          name: "BLACK ICE🧊",
+          name: "JENNY KUSH🥭 ",
           farm: "DexterSelection 🧤",
           promoEligible: true,
           type: "🇺🇸 Cali US",
-          image: "ProductBI.jpg",
-          video: "VideoBI.mp4",
+          image: "ProductJK.jpg",
+          video: "VideoJK.mp4",
           description: `MEED SHELF PRENIUM🏆`,
           tarifs: [
             { weight: "5g", price: 50.0 },
@@ -424,14 +264,14 @@ if (promoPopupClose) {
           ],
         },
          {
-          id: "APPLE TARTZ🍏",
+          id: "MULE FUEL⛽️",
           flag: "🇺🇸",
-          name: "APPLE TARTZ🍏",
+          name: "MULE FUEL⛽️ ",
           farm: "DexterSelection 🧤",
           promoEligible: true,
           type: "🇺🇸 Cali US",
-          image: "ProductAT.jpg",
-          video: "VideoAT.mp4",
+          image: "ProductMF.jpg",
+          video: "VideoMF.mp4",
           description: `MEED SHELF PRENIUM🏆`,
           tarifs: [
             { weight: "5g", price: 50.0 },
@@ -442,14 +282,14 @@ if (promoPopupClose) {
           ],
         },
          {
-          id: "GUMBO PUNCH🍓🍬",
+          id: "BLUE SUNSET🐬",
           flag: "🇺🇸",
-          name: "GUMBO PUNCH🍓🍬",
+          name: "BLUE SUNSET🐬 ",
           farm: "DexterSelection 🧤",
           promoEligible: true,
           type: "🇺🇸 Cali US",
-          image: "ProductGP.jpg",
-          video: "VideoGP.mp4",
+          image: "ProductBS.jpg",
+          video: "VideoBS.mp4",
           description: `MEED SHELF PRENIUM🏆`,
           tarifs: [
             { weight: "5g", price: 50.0 },
@@ -459,78 +299,6 @@ if (promoPopupClose) {
             { weight: "100g", price: 550.0 },
           ],
         },
-         {
-          id: "CHERRY SKITELEZ🍒🍬",
-          flag: "🇺🇸",
-          name: "CHERRY SKITELEZ🍒🍬 ",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🇺🇸 Cali US",
-          image: "ProductCS.jpg",
-          video: "VideoCS.mp4",
-          description: `MEED SHELF PRENIUM🏆`,
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "10g", price: 90.0 },
-            { weight: "25g", price: 150.0 },
-            { weight: "50g", price: 280.0 },
-            { weight: "100g", price: 550.0 },
-          ],
-        },
-        /*  {
-          id: "ZUSHI🐬",
-          flag: "🇺🇸",
-          name: "ZUSHI🐬 ",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🇺🇸 Cali US",
-          image: "ProductZ.png",
-          video: "VideoZ.mov",
-          description: `MEED SHELF PRENIUM🏆`,
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "10g", price: 90.0 },
-            { weight: "25g", price: 150.0 },
-            { weight: "50g", price: 280.0 },
-            { weight: "100g", price: 550.0 },
-          ],
-        }, */
-         {
-          id: "ORANGE BERRY🍊",
-          flag: "🇺🇸",
-          name: "ORANGE BERRY🍊 ",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🇺🇸 Cali US",
-          image: "ProductOB.png",
-          video: "VideoOB.mov",
-          description: `MEED SHELF PRENIUM🏆`,
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "10g", price: 90.0 },
-            { weight: "25g", price: 150.0 },
-            { weight: "50g", price: 280.0 },
-            { weight: "100g", price: 550.0 },
-          ],
-        },
-        /*  {
-          id: "FINE CHERRY🍒",
-          flag: "🇺🇸",
-          name: "FINE CHERRY🍒 ",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "🇺🇸 Cali US",
-          image: "ProductFC.png",
-          video: "VideoFC.mov",
-          description: `MEED SHELF PRENIUM🏆`,
-          tarifs: [
-            { weight: "5g", price: 50.0 },
-            { weight: "10g", price: 90.0 },
-            { weight: "25g", price: 150.0 },
-            { weight: "50g", price: 280.0 },
-            { weight: "100g", price: 550.0 },
-          ],
-        }, */
          
       ],
     },
@@ -569,7 +337,23 @@ if (promoPopupClose) {
       quality: "❄️ Zip",
       image: "CategZip.png",
       products: [
-         {
+        {
+          id: "BATMAN🇨🇴",
+          flag: "🇨🇴",
+          name: "BATMAN🇨🇴",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "❄️ Zip",
+          image: "ProductBT.png",
+          video: "VideoBT.mov",
+          description: "🇨🇴CARO COLOMBIA BATMAN🇨🇴 \n TYPE : PUR 0,9💎",
+          tarifs: [
+            { weight: "1b", price: 60.0 },
+            { weight: "3b", price: 120.0 },
+            { weight: "5b", price: 200.0 },
+          ],
+        },
+        /*  {
           id: "🇩🇴CARO REP DOM",
           flag: "🇩🇴",
           name: "🇩🇴CARO REP DOM",
@@ -601,7 +385,7 @@ if (promoPopupClose) {
             { weight: "5b", price: 200.0 },
             { weight: "10b", price: 350.0 },
           ],
-        },
+        }, */
       ],
     }
     
