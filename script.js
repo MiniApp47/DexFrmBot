@@ -94,6 +94,45 @@ if (promoPopupClose) {
   
   // --- CATALOGUE DEXTER FARM : PRODUITS ---
   const appData = [
+    {
+      id: "VAPES",
+      name: "💨 VAPES",
+      type: "VAPES",
+      quality: "💨 VAPES",
+      image: "CategVape.png",
+
+      products: [
+         {
+          id: "🇺🇸VAPES CALI🇺🇸",
+          flag: "🇺🇸",
+          name: "🇺🇸VAPES CALI🇺🇸",
+          farm: "KOMA VAPES🇺🇸",
+          promoEligible: true,
+          type: "Hash",
+          image: "ProductVC.jpg",
+          images:[ "ProductVC.jpg","ProductVC2.jpg"],
+          video: "VideoVC.mp4",
+          description: `THC : 92%📈
+
+STRAIN : 
+KEY LIME PIE🍋‍🟩
+LONDON CAKE🍰
+CANDY RAIN🍭
+TOAD VENOM🕷️
+GELATO 33🍨
+
+TYPE : OIL NATURAL🏆`,
+          tarifs: [
+            { weight: "1 vapes", price: 70.0 },
+            { weight: "3 vapes", price: 140.0 },
+            { weight: "5 vapes", price: 230.0 },
+            { weight: "10 vapes", price: 400.0 },
+
+          ],
+        },
+      
+      ],
+    },
     /*  {
       id: "PIATELA",
       name: "🍨 PIATELA",
@@ -161,6 +200,40 @@ if (promoPopupClose) {
       image: "CategStatic.png",
 
       products: [
+      {
+          id: "IPANEMA🍍",
+          flag: "🇲🇦",
+          name: "IPANEMA🍍",
+          farm: "🇲🇦STATIC PLASMA🇲🇦",
+          promoEligible: true,
+          type: "⚡️ Static",
+          image: "ProductIP.jpg",
+          video: "VideoIP.mp4",
+          description: " 🇲🇦STATIC PLASMA🇲🇦– CATÉGORIE : PRENIUM💎",
+          tarifs: [
+            { weight: "5g", price: 80.0 },
+            { weight: "10g", price: 150.0 },
+            { weight: "25g", price: 280.0 },
+            { weight: "50g", price: 450.0 },
+          ],
+        },
+      {
+          id: "GOLD 24K🏆",
+          flag: "🇲🇦",
+          name: "GOLD 24K🏆",
+          farm: "🇲🇦STATIC PLASMA🇲🇦",
+          promoEligible: true,
+          type: "⚡️ Static",
+          image: "Product24.jpg",
+          video: "Video24.mp4",
+          description: " 🇲🇦STATIC PLASMA🇲🇦– CATÉGORIE : PRENIUM💎",
+          tarifs: [
+            { weight: "5g", price: 80.0 },
+            { weight: "10g", price: 150.0 },
+            { weight: "25g", price: 280.0 },
+            { weight: "50g", price: 450.0 },
+          ],
+        },
       {
           id: "ORANGE CANDY🍊",
           flag: "🇲🇦",
@@ -234,7 +307,23 @@ if (promoPopupClose) {
       image: "CategFrozen.png",
 
       products: [
-
+{
+          id: "WHITE OG🍄‍🟫",
+          flag: "🇺🇸",
+          name: "WHITE OG🍄‍🟫 ",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "🧊 Frozen",
+          image: "ProductWOG.jpg",
+          video: "VideoWOG.mp4",
+          description: `🇲🇦FRESH FROZEN🇲🇦`,
+          tarifs: [
+            { weight: "5g", price: 60.0 },
+            { weight: "10g", price: 100.0 },
+            { weight: "25g", price: 210.0 },
+            { weight: "50g", price: 400.0 },
+          ],
+        },
       ],
     },
     {
