@@ -152,7 +152,7 @@ TYPE : OIL NATURAL🏆`,
       image: "CategJaune.png",
 
       products: [
-        {
+        /* {
           id: "🇺🇸JAUNE MOUSSEUX🇺🇸",
           flag: "🇺🇸",
           name: "🇺🇸JAUNE MOUSSEUX🇺🇸",
@@ -169,24 +169,22 @@ TYPE : OIL NATURAL🏆`,
             { weight: "100g", price: 300.0 },
 
           ],
-        },
+        }, */
         {
           id: "🇲🇦JAUNE MOUSSEUX🇲🇦",
           flag: "🇲🇦",
           name: "🇲🇦JAUNE MOUSSEUX🇲🇦",
-          farm: " STARBUCK COFFEE🇲🇦",
+          farm: "DexterSelection 🧤",
           promoEligible: true,
           type: "Hash",
-          image: "ProductJMMM.jpg",
-          video: "VideoJMMM.mp4",
+          image: "ProductJM.jpg",
+          video: "VideoJM.mp4",
           description: "",
           tarifs: [
             { weight: "10g", price: 50.0 },
-            { weight: "25g", price: 90.0 },
-            { weight: "50g", price: 140.0 },
-            { weight: "100g", price: 260.0 },
-            { weight: "500g", price: 1050.0 },
-            { weight: "1Kg", price: 2050.0 },
+            { weight: "25g", price: 100.0 },
+            { weight: "50g", price: 150.0 },
+            { weight: "100g", price: 280.0 },
 
           ],
         },
