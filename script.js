@@ -199,6 +199,23 @@ TYPE : OIL NATURAL🏆`,
 
       products: [
       {
+          id: "BLUCCI🫐",
+          flag: "🇲🇦",
+          name: "BLUCCI🫐",
+          farm: "🇲🇦STATIC PLASMA🇲🇦",
+          promoEligible: true,
+          type: "⚡️ Static",
+          image: "ProductBII.png",
+          video: "VideoBII.mp4",
+          description: " 🇲🇦STATIC PLASMA🇲🇦– CATÉGORIE : PRENIUM💎",
+          tarifs: [
+            { weight: "5g", price: 80.0 },
+            { weight: "10g", price: 150.0 },
+            { weight: "25g", price: 280.0 },
+            { weight: "50g", price: 450.0 },
+          ],
+        },
+      {
           id: "IPANEMA🍍",
           flag: "🇲🇦",
           name: "IPANEMA🍍",
