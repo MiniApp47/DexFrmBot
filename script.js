@@ -341,6 +341,23 @@ TYPE : OIL NATURAL🏆`,
 
       products: [
 {
+          id: "GARLOTTI🪷",
+          flag: "🇺🇸",
+          name: "GARLOTTI🪷 ",
+          farm: "DexterSelection 🧤",
+          promoEligible: true,
+          type: "🧊 Frozen",
+          image: "ProductGT.jpg",
+          video: "VideoGT.mp4",
+          description: `🇲🇦FRESH FROZEN🇲🇦`,
+          tarifs: [
+            { weight: "5g", price: 60.0 },
+            { weight: "10g", price: 100.0 },
+            { weight: "25g", price: 200.0 },
+            { weight: "50g", price: 350.0 },
+          ],
+        },
+{
           id: "WHITE OG🍄‍🟫",
           flag: "🇺🇸",
           name: "WHITE OG🍄‍🟫 ",
