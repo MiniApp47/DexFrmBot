@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Dexter Farm</title>
+    <!-- Remplacer dexfrarmngc.store par le domaine HTTPS du VPS -->
+    <meta name="reviews-api" content="https://dexfrarmngc.store/api/reviews">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -1101,6 +1103,37 @@
         .image-modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); align-items: center; justify-content: center; }
         .modal-content { max-width: 90%; max-height: 90%; border-radius: 10px; }
         .close-modal { position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; font-weight: bold; cursor: pointer; }
+        /* Avis dynamiques : thème existant et navigation à quatre onglets */
+        .bottom-nav { gap: 7px; padding: 10px 8px max(10px, env(safe-area-inset-bottom)); box-sizing: border-box; }
+        .bottom-nav .nav-item { width: auto; flex: 1 1 0; min-width: 0; max-width: 100px; box-sizing: border-box; padding: 8px 4px; }
+        #page-avis .avis-content { width: 100%; max-width: 560px; margin: auto; box-sizing: border-box; gap: 14px; padding: 20px 14px 105px; align-items: stretch; }
+        #page-avis .page-title, #page-avis .subtitle { text-align: center; margin: 0; }
+        #page-avis .page-title { color: var(--accent-color); }
+        .review-panel, .review-card { padding: 17px; border: 1px solid #a6e80566; border-radius: 17px; background: rgba(15,15,15,.94); box-shadow: 0 5px 16px #0007; }
+        .review-panel h3 { margin: 0 0 12px; font-size: 1.05rem; }
+        .review-summary { font-size: 1.5rem; color: var(--accent-color); font-weight: bold; }
+        .review-note { font-size: .82rem; color: #b7b7b7; line-height: 1.5; margin: 7px 0; }
+        #review-form { display: flex; flex-direction: column; gap: 10px; }
+        #review-form label, .review-rating legend { font-weight: 500; font-size: .9rem; }
+        #review-form input, #review-form textarea { width: 100%; box-sizing: border-box; background: #222; color: white; font: inherit; font-size: 16px; padding: 12px; border: 1px solid #666; border-radius: 10px; }
+        #review-form textarea { resize: vertical; }
+        .review-rating { border: 0; margin: 0; padding: 0; }
+        .review-stars { display: flex; justify-content: center; gap: 5px; }
+        .review-stars button { flex: 1; background: transparent; color: #777; font-size: 34px; border: 0; cursor: pointer; padding: 5px 0; }
+        .review-stars button.selected { color: #ffd35a; }
+        .review-primary, .review-secondary { border-radius: 10px; cursor: pointer; padding: 12px; font: inherit; font-weight: bold; }
+        .review-primary { background: var(--accent-color); color: #101010; border: none; }
+        .review-secondary { color: var(--accent-color); border: 1px solid #a6e80688; background: #151515; }
+        .review-primary:disabled, .review-secondary:disabled { opacity: .5; cursor: default; }
+        #review-form-status { margin: 0; font-size: .9rem; color: var(--accent-color); }
+        #review-form-status.error { color: #ff9a91; }
+        .review-list { display: grid; gap: 12px; }
+        .review-card-header { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+        .review-card-header strong { overflow-wrap: anywhere; }
+        .review-card-stars { color: #ffd35a; letter-spacing: 1px; }
+        .review-card p { margin: 10px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.5; }
+        .review-card time { font-size: .75rem; color: #aaa; }
+        #review-more[hidden] { display: none; }
     </style>
 </head>
 
@@ -1431,37 +1464,38 @@
 
     <div id="page-avis" class="page">
         <div class="page-content avis-content">
-            
-            <h2 class="page-title">ILS NOUS FONT CONFIANCE 🤝</h2>
-            <p class="subtitle">Quelques retours de nos clients fidèles</p>
-    
-            <div class="carousel-container">
-                <!-- <div class="carousel-track">
-                    <div class="carousel-card">
-                        <img src="Avis1.jpg" alt="Avis client 1" onclick="openImage(this)">
+            <h2 class="page-title">AVIS DE LA COMMUNAUTÉ</h2>
+            <p class="subtitle">Partagez votre expérience, positive ou négative.</p>
+            <section class="review-panel" aria-labelledby="review-summary-title">
+                <h3 id="review-summary-title">Les avis publiés</h3>
+                <div id="review-summary" class="review-summary">—</div>
+                <p class="review-note">Les avis sont modérés avant publication. L’achat n’est pas vérifié.</p>
+                <button type="button" class="review-secondary" id="review-refresh">↻ Actualiser les avis</button>
+            </section>
+            <form id="review-form" class="review-panel">
+                <h3>✍️ Laisser un avis</h3>
+                <label for="review-nickname">Pseudo public (facultatif)</label>
+                <input id="review-nickname" maxlength="40" placeholder="Anonyme" autocomplete="off">
+                <fieldset class="review-rating">
+                    <legend>Votre note</legend>
+                    <div class="review-stars" id="review-stars">
+                        <button type="button" data-rating="1" aria-label="1 étoile" aria-pressed="false">★</button>
+                        <button type="button" data-rating="2" aria-label="2 étoiles" aria-pressed="false">★</button>
+                        <button type="button" data-rating="3" aria-label="3 étoiles" aria-pressed="false">★</button>
+                        <button type="button" data-rating="4" aria-label="4 étoiles" aria-pressed="false">★</button>
+                        <button type="button" data-rating="5" aria-label="5 étoiles" aria-pressed="false">★</button>
                     </div>
-                    <div class="carousel-card">
-                        <img src="Avis2.jpg" alt="Avis client 2" onclick="openImage(this)">
-                    </div>
-                    <div class="carousel-card">
-                        <img src="Avis3.jpg" alt="Avis client 3" onclick="openImage(this)">
-                    </div>
-                     <div class="carousel-card">
-                        <img src="Avis4.jpg" alt="Avis client 4" onclick="openImage(this)">
-                    </div>
-                    <div class="carousel-card">
-                        <img src="Avis5.jpg" alt="Avis client 5" onclick="openImage(this)">
-                    </div>
-                </div>
-                <div class="swipe-indicator">Swipe pour voir la suite ➡️</div> -->
-            </div>
-    
-            <div class="avis-footer">
-                <button id="btn-open-channel" class="main-action-btn potato-btn">
-                    VOIR TOUS LES AVIS SUR POTATO 🥔
-                </button>
-            </div>
-    
+                    <span id="review-rating-label" class="review-note">Choisissez une note</span>
+                </fieldset>
+                <label for="review-body">Votre commentaire</label>
+                <textarea id="review-body" rows="4" minlength="5" maxlength="1000" required placeholder="Racontez votre expérience…"></textarea>
+                <p class="review-note">Votre pseudo, note et commentaire seront publics après modération. Ne partagez pas de données personnelles.</p>
+                <button type="submit" id="review-submit" class="review-primary">Envoyer mon avis</button>
+                <p id="review-form-status" role="status" aria-live="polite"></p>
+            </form>
+            <div id="review-list" class="review-list" aria-live="polite"></div>
+            <p id="review-list-status" class="review-note" role="status"></p>
+            <button type="button" id="review-more" class="review-secondary" hidden>Voir plus d'avis</button>
         </div>
     </div>
 
@@ -1492,12 +1526,12 @@
             <p style="
             margin: inherit;"> LINKS </p>
         </button>
-     <!--    <button id="nav-avis" data-page="page-avis" class="nav-item">
+        <button id="nav-avis" data-page="page-avis" class="nav-item">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
             </svg>
             <p style="margin: inherit;"> AVIS </p>
-        </button> -->
+        </button>
     </div>
 
     <!-- ===== POPUP PROMO DEXTER FARM ===== -->
@@ -1538,7 +1572,7 @@
 </div>
 
     <div id="notification-toast"></div>
-    <script src="script.js"></script>
+    <script src="script.js?v=avis-1"></script>
 </body>
 
 </html>

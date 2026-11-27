@@ -152,6 +152,24 @@ TYPE : OIL NATURAL🏆`,
       image: "CategJaune.png",
 
       products: [
+        {
+          id: "LEMON CHERRY GELATO🍋🍒",
+          flag: "🇺🇸",
+          name: "LEMON CHERRY GELATO🍋🍒",
+          farm: "🇺🇸CALI MOUSSE 2026🇺🇸",
+          promoEligible: true,
+          type: "Hash",
+          image: "ProductLMC.jpg",
+          video: "VideoLMC.mp4",
+          description: "",
+          tarifs: [
+            { weight: "10g", price: 60.0 },
+            { weight: "25g", price: 100.0 },
+            { weight: "50g", price: 160.0 },
+            { weight: "100g", price: 280.0 },
+
+          ],
+        },
         /* {
           id: "🇺🇸JAUNE MOUSSEUX🇺🇸",
           flag: "🇺🇸",
@@ -567,57 +585,9 @@ TYPE : OIL NATURAL🏆`,
             { weight: "20g", price: 520.0 },
           ],
         },
-       /*  {
-          id: "BATMAN🇨🇴",
-          flag: "🇨🇴",
-          name: "BATMAN🇨🇴",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "❄️ Zip",
-          image: "ProductBT.png",
-          video: "VideoBT.mov",
-          description: "🇨🇴CARO COLOMBIA BATMAN🇨🇴 \n TYPE : PUR 0,9💎",
-          tarifs: [
-            { weight: "1b", price: 60.0 },
-            { weight: "3b", price: 120.0 },
-            { weight: "5b", price: 200.0 },
-          ],
-        }, */
-        /*  {
-          id: "🇩🇴CARO REP DOM",
-          flag: "🇩🇴",
-          name: "🇩🇴CARO REP DOM",
-          farm: "JACOB & CO🇩🇴",
-          promoEligible: true,
-          type: "❄️ Zip",
-          image: "ProductCRD.jpg",
-          video: "VideoCRD.mp4",
-          description: "TYPE : PUR 0,9💎",
-          tarifs: [
-            { weight: "1b", price: 60.0 },
-            { weight: "3b", price: 120.0 },
-            { weight: "5b", price: 200.0 },
-          ],
-        },
-         {
-          id: "🇧🇴 Caroline Bolivie 💎🔥",
-          flag: "🇧🇴",
-          name: "Caroline Boli 💎🔥",
-          farm: "DexterSelection 🧤",
-          promoEligible: true,
-          type: "❄️ Zip",
-          image: "ProductBL.png",
-          video: "VideoBL.mov",
-          description: "Caroline Bolivienne 🇧🇴 — une texture légèrement plus grasse que la Suriname, offrant une expérience plus ronde et enveloppante. Toujours aussi exceptionnelle, elle se distingue par une dégustation plus douce, plus agréable et parfaitement maîtrisée. Un produit d’initié, raffiné et irrésistible.",
-          tarifs: [
-            { weight: "1b", price: 60.0 },
-            { weight: "3b", price: 120.0 },
-            { weight: "5b", price: 200.0 },
-            { weight: "10b", price: 350.0 },
-          ],
-        }, */
       ],
     }
+
     
   ];
 
@@ -728,6 +698,7 @@ TYPE : OIL NATURAL🏆`,
     } else if (pageId === "page-avis") {
       // <-- LA NOUVELLE CONDITION
       if (avisNav) avisNav.classList.add("active");
+      loadReviews();
     } else {
       // Pour page-home, page-produit, panier, etc.
       homeNav.classList.add("active");
@@ -1751,19 +1722,110 @@ TYPE : OIL NATURAL🏆`,
     }
   }
 
-  // --- GESTION PAGE AVIS ---
+  // --- AVIS : API HTTPS, avis publics et dépôt authentifié Telegram ---
+  const reviewApi = (document.querySelector('meta[name="reviews-api"]')?.content || '').trim().replace(/\/$/, '');
+  const reviewForm = document.getElementById('review-form');
+  const reviewSubmit = document.getElementById('review-submit');
+  const reviewList = document.getElementById('review-list');
+  const reviewMore = document.getElementById('review-more');
+  const reviewRefresh = document.getElementById('review-refresh');
+  const reviewListStatus = document.getElementById('review-list-status');
+  const reviewFormStatus = document.getElementById('review-form-status');
+  let reviewRating = 0, reviewNext = null, reviewLoading = false, reviewSubmitting = false;
 
-  // 1. Bouton vers le canal Potato
-  const btnChannel = document.getElementById("btn-open-channel");
-  if (btnChannel) {
-    btnChannel.addEventListener("click", function () {
-      // Remplace par ton vrai lien de canal
-      const channelLink = "https://tato.im/dexterfarmidf";
-
-      // Ouvre le lien via Telegram
-      tg.openLink(channelLink);
+  function reviewSetRating(value) {
+    reviewRating = value;
+    document.querySelectorAll('#review-stars button').forEach(button => {
+      const n = Number(button.dataset.rating);
+      button.classList.toggle('selected', n <= value);
+      button.setAttribute('aria-pressed', String(n === value));
     });
+    document.getElementById('review-rating-label').textContent = value ? `${value}/5` : 'Choisissez une note';
   }
+  document.querySelectorAll('#review-stars button').forEach(button => {
+    button.addEventListener('click', () => reviewSetRating(Number(button.dataset.rating)));
+  });
+
+  async function reviewRequest(query = '', options = {}) {
+    if (!reviewApi || !reviewApi.startsWith('https://') || reviewApi.includes('TON-DOMAINE')) {
+      throw new Error('Le service des avis n’est pas encore configuré.');
+    }
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 12000);
+    try {
+      const response = await fetch(`${reviewApi}${query}`, { ...options, signal: controller.signal, cache: 'no-store' });
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || 'Service indisponible.');
+      return data;
+    } catch (error) {
+      if (error.name === 'AbortError' || error instanceof TypeError || error instanceof SyntaxError) {
+        throw new Error('Connexion au service des avis impossible. Réessaie plus tard.');
+      }
+      throw error;
+    } finally { clearTimeout(timeout); }
+  }
+
+  function appendReview(review) {
+    const card = document.createElement('article');
+    card.className = 'review-card';
+    const header = document.createElement('div'); header.className = 'review-card-header';
+    const name = document.createElement('strong'); name.textContent = review.nickname;
+    const date = document.createElement('time');
+    const timestamp = new Date(review.created_at * 1000);
+    date.dateTime = timestamp.toISOString(); date.textContent = timestamp.toLocaleDateString('fr-FR');
+    header.append(name, date);
+    const stars = document.createElement('div'); stars.className = 'review-card-stars';
+    stars.textContent = '★'.repeat(review.rating) + '☆'.repeat(5 - review.rating);
+    stars.setAttribute('aria-label', `${review.rating} sur 5`);
+    const body = document.createElement('p'); body.textContent = review.body;
+    card.append(header, stars, body); reviewList.append(card);
+  }
+
+  async function loadReviews(more = false, silent = false) {
+    if (reviewLoading || (more && !reviewNext)) return;
+    reviewLoading = true;
+    reviewRefresh.disabled = true; reviewMore.disabled = true;
+    if (!silent) reviewListStatus.textContent = 'Chargement des avis…';
+    try {
+      const result = await reviewRequest(more ? `?before=${encodeURIComponent(reviewNext)}` : '');
+      if (!more) reviewList.replaceChildren();
+      result.reviews.forEach(appendReview);
+      reviewNext = result.next;
+      reviewMore.hidden = !reviewNext;
+      document.getElementById('review-summary').textContent = result.count ? `★ ${Number(result.average).toFixed(1).replace('.', ',')}/5 · ${result.count} avis` : 'Aucun avis publié';
+      reviewListStatus.textContent = result.count ? '' : 'Soyez le premier à partager votre expérience.';
+    } catch (error) {
+      if (!silent || !reviewList.childElementCount) reviewListStatus.textContent = error.message;
+    } finally { reviewLoading = false; reviewRefresh.disabled = false; reviewMore.disabled = false; }
+  }
+  reviewRefresh.addEventListener('click', () => loadReviews());
+  reviewMore.addEventListener('click', () => loadReviews(true));
+  reviewForm.addEventListener('submit', async event => {
+    event.preventDefault();
+    if (reviewSubmitting) return;
+    reviewFormStatus.classList.remove('error');
+    if (!tg.initData) {
+      reviewFormStatus.textContent = 'Ouvre cette mini-app depuis Telegram pour laisser un avis.';
+      reviewFormStatus.classList.add('error'); return;
+    }
+    if (!reviewRating) {
+      reviewFormStatus.textContent = 'Sélectionne une note de 1 à 5.';
+      reviewFormStatus.classList.add('error'); return;
+    }
+    reviewSubmitting = true; reviewSubmit.disabled = true;
+    reviewFormStatus.textContent = 'Envoi en cours…';
+    try {
+      await reviewRequest('', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({ initData: tg.initData, nickname: document.getElementById('review-nickname').value.trim(), body: document.getElementById('review-body').value.trim(), rating: reviewRating }) });
+      reviewForm.reset(); reviewSetRating(0);
+      reviewFormStatus.textContent = '✅ Avis envoyé ! Il est en attente de modération.';
+    } catch (error) { reviewFormStatus.textContent = error.message; reviewFormStatus.classList.add('error'); }
+    finally { reviewSubmitting = false; reviewSubmit.disabled = false; }
+  });
+  // Actualisation automatique uniquement lorsque l'onglet est visible.
+  // Ne pas réinitialiser une liste dont l'utilisateur consulte les anciennes pages.
+  setInterval(() => {
+    if (!document.hidden && document.getElementById('page-avis').classList.contains('active') && reviewList.childElementCount <= 30) loadReviews(false, true);
+  }, 15000);
 
   // 2. (Optionnel) Zoom sur l'image quand on clique dessus
   window.openImage = function (imgElement) {
